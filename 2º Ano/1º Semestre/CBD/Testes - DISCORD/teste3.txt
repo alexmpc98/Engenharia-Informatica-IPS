@@ -1,0 +1,46 @@
+1-A
+2-A x
+3-B
+4-A
+5-B
+6-B
+7-D
+8-?? x
+9-C
+10-C x
+
+II.1
+Publicação: conjunto de um ou mais artigos, que constitui uma unidade de subscrição
+Artigo: Dados ou Objectos da BD
+
+II.2
+Diferencial
+• Captura apenas as alterações efetuadas na base de dados, desde o último
+backup completo
+• As alterações estão identificadas por uma flag, e apenas estas são escritas no backup
+• Otimiza o espaço necessário para backup
+• Otimiza o tempo necessário para backup e recuperação
+• Necessita do último backup completo para recuperação
+
+Parcial
+• Em algumas aplicações existe informação que não sofre alterações frequentes ou são somente para consulta,esta deve ser colocada em filegroups read-only
+• Este tipo de backup apenas guarda a informação que não faz parte dos filegroups read-only 
+• Reduz o espaço necessário e tempo do backup
+
+Cópia
+• Idêntico ao completo mas não altera a informação que indica se os dados estão já salvaguardados, não interfere com politica de backup definida
+
+II.3
+Principal: é o objeto onde as permissoes podem ser designada (logins e certificadas)
+Securables: recursos do SQL SERVER (procedures, function, views)
+
+II.4
+Snapshot: Existe um grande desfasamento nos períodos de atualização dos dados
+
+Transactional:  Quando as alterações incrementais na base de dados de origem são replicadas na base de dados de destino através do Distributor,
+minimizando o período de desfasamento da informação entre bases de dados
+
+Merge: Os Subscribers necessitam de receber dados efectuar alterações offline e sincronizá-las no Publisher e nos outros Subscribers;
+
+II.5
+??

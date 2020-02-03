@@ -1,0 +1,68 @@
+1º Teste
+	1 - d)
+	RAID 0 -> acesso + rápida a informação pois são dois blocos em paralelo(não há paridade);
+	RAID 5 -> leitura rápida, escrita não tão rápida(há paridade);
+	
+	2 - d)
+	valores null -> ao permitir valores null, esse campo não vai ocupar espaço
+	logo o tamanho ocupado vai ser variável;
+	fisíca variável -> tipo nvarchar o tamanho pode ir até um X;
+	multi-table clustering -> armazena mais do que uma relação no mesmo ficheiro,
+	logo obriga a ter registo de tamanho variável;
+
+	3 - d) x
+	dados a partir de memória -> estão em mémoria logo estão mais à mão
+	dados a partir de disco -> estão em disco logo têm que ser procurados
+	dicheiros secundários dispersos em vários n discos -> mais discos mais 
+	locais para procurar;
+	
+	4 - d)
+	FileGroups podem conter dados e metadados pois têm que estar sem associados 
+	a um filegroup, caso não estejam vão para um filegroup default;
+	
+	5 - b) x
+	Ficheiros tem que ter sempre o primário sendo opecional o secundário
+	e os transaction logs;
+	
+	6 - b)
+	Um indice clustered apenas apenas pode ser criado uma vez numa tabela sendo que,
+	por default é a PK o indice clustered;
+	
+	7 - d)
+	Caso não seja definido pelo utilizador o filegroup atribuido é sempre um default,
+	podendo este ser modado caso o programador queira. Na criação de uma tabela podemos
+	definir um filegroup fazendo com que a tabela não seja guardada no filegroup de 
+	default mas sim no definido na criação;
+
+	8 - c)
+	Parsing -> Altura em que a BD corre todos as querys "lendo" toda a informação 
+	nelas contida, fazendo ainda a verificação sintática delas;
+	Translation -> como o nome indica, faz a tradução do que foi lido pela fase de Parsing;
+	
+	9 - a) x
+	
+	10 - d) x
+	
+	11 - d)
+	Heap files
+		- Não tem ordenação
+		- um registo é colocado onde houver espaço
+	Hash files
+		- Tem ordenação
+		- um registo é colocado no seu cloco no ficheiro
+
+	12 - c) x
+
+	13 - d)
+	Monitorização
+	- Continuar permite a intervenção pró-activa
+	- Existem ferramentas built in e third party que ajudam nisso
+	- Identificar baseline, CPU, memória, discos, buffer manager e index usagw statics
+	
+	14 - a) x
+	O composite indexa um conjunto de colunas e o cover indica num indice non-clustered, informação adicional
+	para ser armazenada juntamento no indice;
+
+	15 - c)
+	
+

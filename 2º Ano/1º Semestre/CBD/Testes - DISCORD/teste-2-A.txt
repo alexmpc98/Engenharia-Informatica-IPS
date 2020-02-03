@@ -1,0 +1,43 @@
+1-C
+2-C
+3-A
+4-A
+5-B
+6-C
+7-A 
+8-C
+9-D
+10-B
+
+II.1
+Phantom Read
+É quando uma transacção T1 lê um grupo de registos que satisfazem uma dada condição, de seguida uma transacção T2 modifica 
+ou insere um registo que satisfaz essa condição e faz commit, de seguida se T1 voltar a a ler os registos nas mesmas condições 
+irá obter um resultado diferente.
+Dirty Read
+Ocorre quando uma transacção (T1)  modifica determinada informação e de seguida uma outra transacção (T2) lê a mesma informação
+antes que T1 faça commit dessa informação ou rollback. Caso T1 faça rollback, T2 leu informação que nunca chegou a existir
+oficialmente na base de dados.
+
+II.2
+O nível de isolamento serializable faz um completo isolamento da transação, este não tem nenhum efeito secundário causado pelo seu nível de isolamento.
+Serializável é o nível de isolamento mais rigoroso, mas a concorrência é menor que em outros níveis de isolamento de transações.
+
+II.3
+   Chaves simétricas: o emissor e o recetor partilham uma única e comum chave usada para encriptar e desencriptar os dados. 
+Vantagens:Mais simples e mais performance
+Desvantagens: A chave tem de ser transmitida
+
+   Chaves assimétricas: utilizam—se 2chaves uma para encriptar e outra para desencriptar. E constituído por um par de chaves, uma pública e uma privada. O emissor utiliza a chave publica para realizar a encriptação e o recetor a chave privada correspondente para desencriptar(a chave publica não permite desencriptar)
+Vantagens: Mais poderoso
+Desvantagens: Mais complexo e Menos performance
+
+Tipicamente utiliza—se as chaves assimétricas para encriptar chaves simétricas, estas últimas usadas então na encriptação dos dados.
+
+
+II.4
+??
+
+
+II.5
+GBAFD OU GBADF
