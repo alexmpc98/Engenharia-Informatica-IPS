@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Jogo
+comment1.params=
+comment1.target=Jogo()
+comment2.params=
+comment2.target=java.lang.String\ getModo()
+comment3.params=modo
+comment3.target=void\ setModo(java.lang.String)
+numComments=4

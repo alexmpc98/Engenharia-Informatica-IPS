@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Sculpture
+comment1.params=artist\ title\ material
+comment1.target=Sculpture(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=Sculpture()
+comment3.params=
+comment3.target=java.lang.String\ getMaterial()
+comment4.params=material
+comment4.target=void\ setMaterial(java.lang.String)
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=WorkOfArt
+comment1.params=artist\ title
+comment1.target=WorkOfArt(java.lang.String,\ java.lang.String)
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment2.params=
+comment2.target=WorkOfArt()
+comment3.params=
+comment3.target=int\ getCode()
+comment4.params=
+comment4.target=boolean\ getOnDisplay()
+comment5.params=
+comment5.target=java.lang.String\ getArtist()
+comment6.params=
+comment6.target=java.lang.String\ getTitle()
+comment7.params=onDisplay
+comment7.target=void\ setOnDisplay(boolean)
+comment8.params=artist
+comment8.target=void\ setArtist(java.lang.String)
+comment9.params=title
+comment9.target=void\ setTitle(java.lang.String)
+numComments=11

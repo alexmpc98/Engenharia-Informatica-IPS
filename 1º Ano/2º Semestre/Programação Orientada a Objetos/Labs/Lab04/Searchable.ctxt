@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Searchable
+comment1.params=content
+comment1.target=boolean\ search(java.lang.String)
+numComments=2

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Post
+comment1.params=
+comment1.target=Post()
+comment2.params=
+comment2.target=void\ show()
+comment3.params=
+comment3.target=User\ getAuthor()
+comment4.params=newAuthor
+comment4.target=void\ setAuthor(User)
+comment5.params=
+comment5.target=boolean\ isVisible()
+numComments=6

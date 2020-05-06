@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Teacher
+comment1.params=username\ password
+comment1.target=Teacher(java.lang.String,\ java.lang.String)
+comment2.params=courseUnit
+comment2.target=void\ addCourseUnit(java.lang.String)
+comment3.params=
+comment3.target=void\ getInfo()
+numComments=4

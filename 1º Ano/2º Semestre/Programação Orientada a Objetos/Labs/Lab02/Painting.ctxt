@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Painting
+comment1.params=artist\ title\ artMovement\ inkTypeConstructor\ SupportConstructor
+comment1.target=Painting(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=Painting()
+comment3.params=
+comment3.target=java.lang.String\ getArtMovement()
+comment4.params=
+comment4.target=Painting.InkType\ getInkType()
+comment5.params=
+comment5.target=Painting.Support\ getSupport()
+comment6.params=artMovement
+comment6.target=void\ setArtMovement(java.lang.String)
+comment7.params=inkTypeSet
+comment7.target=void\ setInkType(java.lang.String)
+comment8.params=SupportSet
+comment8.target=void\ setSupport(java.lang.String)
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=10

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=InputReader
+comment0.text=\r\n\ InputReader\ implementa\ a\ entrada\ de\ dados\ atrav\u00E9s\ do\ teclado.\r\n\r\n\ @author\ POO\r\n\ @version\ 1\ (26/02/2018)\r\n
+comment1.params=
+comment1.target=InputReader()
+comment2.params=question
+comment2.target=char\ getChar(java.lang.String)
+numComments=3

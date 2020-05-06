@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Museum
+comment1.params=
+comment1.target=Museum()
+comment2.params=workOfArt\ room
+comment2.target=void\ addToMuseumCollection(WorkOfArt,\ Room)
+comment3.params=workOfArt
+comment3.target=void\ removeFromMuseumCollection(WorkOfArt)
+comment4.params=room
+comment4.target=java.util.ArrayList\ listArtInRoom(Room)
+comment5.params=
+comment5.target=java.lang.String\ printAllByRoom()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

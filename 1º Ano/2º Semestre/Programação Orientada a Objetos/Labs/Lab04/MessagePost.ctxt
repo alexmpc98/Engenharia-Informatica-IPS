@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=MessagePost
+comment1.params=message
+comment1.target=MessagePost(java.lang.String)
+comment2.params=content
+comment2.target=boolean\ search(java.lang.String)
+comment3.params=
+comment3.target=void\ show()
+numComments=4

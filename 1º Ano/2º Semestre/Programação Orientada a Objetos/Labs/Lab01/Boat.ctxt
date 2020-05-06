@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Boat
+comment1.params=numberOfFishermen\ name\ tankQuantity
+comment1.target=Boat(int,\ java.lang.String,\ int)
+comment1.text=\r\n\ COnstrutor\ para\ objetos\ da\ classe\ Boat\r\n
+comment10.params=
+comment10.target=int\ getTotalFish()
+comment11.params=
+comment11.target=java.lang.String\ toString()
+comment2.params=
+comment2.target=int\ getNumberOfFishermen()
+comment3.params=numberOfFishermen
+comment3.target=void\ setNumberOfFishermen(int)
+comment4.params=
+comment4.target=BoatStatus\ getStatus()
+comment5.params=status
+comment5.target=void\ setStatus(BoatStatus)
+comment6.params=
+comment6.target=java.lang.String\ installTank()
+comment7.params=
+comment7.target=java.lang.String\ startFishing()
+comment8.params=
+comment8.target=java.lang.String\ returnToPort()
+comment9.params=
+comment9.target=java.lang.String\ collect()
+numComments=12

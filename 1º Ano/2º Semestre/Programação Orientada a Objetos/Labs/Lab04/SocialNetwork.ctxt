@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=SocialNetwork
+comment1.params=
+comment1.target=SocialNetwork()
+comment10.params=
+comment10.target=void\ showNotifications()
+comment2.params=user
+comment2.target=void\ addUser(User)
+comment3.params=username\ password
+comment3.target=void\ loginSession(java.lang.String,\ java.lang.String)
+comment4.params=
+comment4.target=void\ logoutSession()
+comment5.params=
+comment5.target=void\ showHeader()
+comment6.params=
+comment6.target=void\ listUsers()
+comment7.params=post
+comment7.target=void\ publishPost(Post)
+comment8.params=
+comment8.target=void\ showFeed()
+comment9.params=text
+comment9.target=void\ searchFor(java.lang.String)
+numComments=11
