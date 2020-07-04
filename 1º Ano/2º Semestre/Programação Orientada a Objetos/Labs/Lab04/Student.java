@@ -8,7 +8,7 @@ public class Student extends User
     }
     
     @Override
-    public void getInfo(){
+    public void getInfo(String username){
         String str = "";
         str += "Estudante: \n";
         str += "       Username: " + getUsername() + "\n";

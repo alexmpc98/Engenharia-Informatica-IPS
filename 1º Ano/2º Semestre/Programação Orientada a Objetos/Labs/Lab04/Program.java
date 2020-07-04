@@ -12,8 +12,8 @@ public class Program {
         teacher.addCourseUnit("Programação Orientada por Objetos");
         teacher.addCourseUnit("Introdução à Programação");
         
-        teacher.getInfo(); 
-        student.getInfo(); 
+        teacher.getInfo(teacher.getUsername()); 
+        student.getInfo(student.getUsername()); 
         
         System.out.println("/** ----------------------------------------------- **/");  
         
@@ -42,10 +42,8 @@ public class Program {
         
         System.out.println("/** ------------------- Nível 3 ------------------- **/"); 
         
-        socialNetwork.addUser(student);
         socialNetwork.addUser(teacher);
-       
-        socialNetwork.loginSession("rui", "123");
+        
         socialNetwork.loginSession(teacher.getUsername(), teacher.getPassword());
         
         socialNetwork.listUsers();
@@ -69,12 +67,9 @@ public class Program {
         
         System.out.println("/** ------------------- Nível 5 ------------------- **/"); 
         
-        socialNetwork.searchFor("Football");
-        socialNetwork.searchFor("Teste");
+        socialNetwork.searchFor("Football Game");
         
         socialNetwork.showNotifications();
-        
-        socialNetwork.logoutSession();
         
         System.out.println("/** ----------------------------------------------- **/");
         

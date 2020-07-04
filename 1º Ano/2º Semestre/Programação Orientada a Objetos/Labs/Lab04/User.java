@@ -9,7 +9,7 @@ public abstract class User
        this.authenticated = false;
    }
    
-   public abstract void getInfo();
+   public abstract void getInfo(String username);
    
    public String booleanToString(boolean value){
        return value == true ? "Sim" : "Não";

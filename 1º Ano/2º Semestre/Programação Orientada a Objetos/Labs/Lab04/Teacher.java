@@ -14,7 +14,7 @@ public class Teacher extends User
     }
     
     @Override
-    public void getInfo(){
+    public void getInfo(String username){
         String str = "";
         str += "Professor/a: \n";
         str += "       Username: " + getUsername() + "\n";

@@ -6,58 +6,57 @@ public class Ecra
     {     
         
     }
-    public void initialMenu(){
+    public void displayApplicationMenu(){ 
+        Scanner sca = new Scanner(System.in);
+        System.out.println("|*********************************|");
+        System.out.println("|           BlockuDoku            |");
+        System.out.println("|*********************************|");
+        System.out.println("|                                 |");
+        System.out.println("| 1 - Iniciar novo jogo           |");
+        System.out.println("| 2 – Abrir jogo                  |");
+        System.out.println("| 3 – Mostrar pontuações pessoais |");
+        System.out.println("| 4 – Ranking (TOP 10)            |");
+        System.out.println("| 0- Sair do jogo                 |");  
+        System.out.println("|                                 |");
+        System.out.println("|*********************************|");          
+    }
+     
+    public void run () {
         int escolha = 0;
-        int dificulty = 0;
-            do{
-                Scanner sca = new Scanner(System.in);
-                System.out.println("|**********************|");
-                System.out.println("|     BlockuDoku       |");
-                System.out.println("|**********************|");
-                System.out.println("|                      |");
-                System.out.println("| 1- Iniciar novo jogo |");
-                System.out.println("|                      |");
-                System.out.println("| 0- Sair do jogo      |");  
-                System.out.println("|                      |");
-                System.out.println("|**********************|");
-                escolha = sca.nextInt();
-                
-                switch(escolha){
+        String result;
+        Scanner sca = new Scanner(System.in); 
+        do{
+            displayApplicationMenu();
+            escolha = sca.nextInt();
+            result = checkValues(escolha);
+            if (result != "Opção Invalida") {
+                System.out.println(result); 
+                break;
+            }
+        } while (escolha != 0);
+    }
+    
+    public String checkValues(int escolha){
+            String out = "Opção Invalida";
+            switch(escolha){
                     case 1:
-                     do{
-                        System.out.println("|*********************************|");
-                        System.out.println("|     Escolha o modo de jogo      |");
-                        System.out.println("|*********************************|");
-                        System.out.println("|                                 |");
-                        System.out.println("| 1 - Básico                      |");
-                        System.out.println("|                                 |");
-                        System.out.println("| 2 - Avançado                    |");
-                        System.out.println("|                                 |");
-                        System.out.println("| 0 - Voltar para o menu inicial  |");
-                        System.out.println("|                                 |");
-                        System.out.println("|*********************************|");
-                        dificulty = sca.nextInt();
-                        
-                        switch(dificulty){
-                            case 1:
-                                System.out.println("Bem vindo ao BlockoDoku - Modo Básico");
-                                break;
-                            case 2:
-                                System.out.println("Bem vindo ao BlockoDoku - Modo Avançado");
-                                break;
-                            
-                            default:
-                                System.out.println("Opção Invalida");
-                                break;
-                            
-                           
-                        }
-                     } while (dificulty != 0);
-                     
+                         out = "Iniciar novo jogo";
+                         break;
+                    case 2:
+                         out = "Abrir jogo";
+                         break;
+                    case 3:
+                         out = "Mostrar pontuações pessoais";
+                         break;
+                    case 4:
+                         out = "Ranking (TOP 10)";
+                         break;
+                    case 0:
+                         break; 
                     default:
-                        System.out.println("Opção Invalida");
+                        out = "Opção Invalida";
                         break;
-                }
-            } while (escolha != 0);
+            }
+            return out;
     }
 }

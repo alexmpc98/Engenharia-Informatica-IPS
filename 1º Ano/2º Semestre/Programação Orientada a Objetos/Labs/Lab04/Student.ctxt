@@ -2,6 +2,6 @@
 comment0.target=Student
 comment1.params=username\ password\ course
 comment1.target=Student(java.lang.String,\ java.lang.String,\ java.lang.String)
-comment2.params=
-comment2.target=void\ getInfo()
+comment2.params=username
+comment2.target=void\ getInfo(java.lang.String)
 numComments=3

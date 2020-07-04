@@ -21,7 +21,7 @@ public class EventPost extends Post implements Notifiable
     }
     
     public boolean search(String content){
-        if(description.contains(content) || location.contains(content) || (getAuthor().username).contains(content)){
+        if(description == content || location == content || getAuthor().username == content){
                 return true;
         }
         return false;

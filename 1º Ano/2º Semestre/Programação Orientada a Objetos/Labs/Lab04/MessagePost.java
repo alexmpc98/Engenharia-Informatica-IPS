@@ -10,7 +10,7 @@ public class MessagePost extends Post
     }
     
     public boolean search(String content){
-        if((getAuthor().username).contains(content) || message.contains(content)){
+        if(getAuthor().username == content || message == content){
                 return true;
         }
         return false;

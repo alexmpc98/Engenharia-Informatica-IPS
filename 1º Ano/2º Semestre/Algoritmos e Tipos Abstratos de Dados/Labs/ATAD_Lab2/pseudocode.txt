@@ -1,0 +1,52 @@
+/* NÍVEL 1 */
+
+Algorithm: strLength
+
+input: [*str - char array]
+output: [size - int]
+
+BEGIN
+    i <- 0
+    WHILE (str[i] ≠ '\0') DO
+        i <- i + 1
+    END WHILE
+    RETURN i + 1
+END
+ALGORITHM COMPLEXITY: O(n) -> LINEAR
+
+Justificação:
+Este algoritmo possui uma complexidade algorítmica O(n), porque o número de instruções cresce linearmente de acordo com o número de caracteres da string.
+
+
+/* NÍVEL 2 */
+
+Algorithm: swapStrings
+
+input: [*str1 - char array, *str2 - char array, by - integer]
+output: [size - int]
+
+BEGIN
+    str1Length <- strLength(str1)
+    str2Length <- strLength(str2)
+    tempChar <- ''
+
+    IF (str1Length ≠ str2Length ) THEN
+        RETURN false
+    END IF
+
+    IF (by > str1Length || by > str2Length || by <= 0) THEN
+        RETURN false
+    END IF
+
+    FOR i <- by - 1 TO (i < str1Length) DO
+        tempChar <- str1[i]
+        str1[i] <- str2[i]
+        str2[i] <- tempChar
+        i <- i + by
+    END FOR
+    RETURN true
+END
+ALGORITHM COMPLEXITY: O(n) -> LINEAR
+
+Justificação:
+Este algoritmo possui uma complexidade algorítmica O(n), porque é a soma de três lineares (O(n)) que dá O(3n). Como removemos a constante (3), fica O(n).

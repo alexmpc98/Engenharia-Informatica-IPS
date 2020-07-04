@@ -2,8 +2,8 @@
 comment0.target=User
 comment1.params=username\ password
 comment1.target=User(java.lang.String,\ java.lang.String)
-comment2.params=
-comment2.target=void\ getInfo()
+comment2.params=username
+comment2.target=void\ getInfo(java.lang.String)
 comment3.params=value
 comment3.target=java.lang.String\ booleanToString(boolean)
 comment4.params=

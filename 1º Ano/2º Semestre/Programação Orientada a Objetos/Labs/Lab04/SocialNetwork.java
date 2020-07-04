@@ -30,25 +30,22 @@ public class SocialNetwork
                         System.out.println("Bem Vindo " + username + "!\n");
                         this.authenticatedUser = this.users.get(i);
                         this.authenticatedUser.setAuthenticated(true);
-                        return;
-                    } else {
-                        System.out.println("Password incorreta!\n");
-                        return;
+                        break;
+                        //return;
                     }
                 } else {
                     System.out.println("O utilizador já se encontra autenticado!");
-                    return;
                 }
-            } 
+            } else {
+                   System.out.println("O utilizador não existe!");  
+            }
         }
-        System.out.println("O utilizador não existe!");  
+     
     }
     
     public void logoutSession(){
-        if(this.authenticatedUser != null || this.authenticatedUser.isAuthenticated() == true) {
-            this.authenticatedUser.setAuthenticated(false);
+        if(this.authenticatedUser != null)
             this.authenticatedUser = null;
-        }  
     }
     
     public void showHeader(){
@@ -66,13 +63,13 @@ public class SocialNetwork
         str += "*************************************************\n";
         System.out.println(str);
         for(int i=0; i<this.users.size();i++){
-            this.users.get(i).getInfo();
+            this.users.get(i).getInfo(this.users.get(i).username);
         }
     }
     
     public void publishPost(Post post){
         String message = "Postagem não publicada!";
-        if(this.authenticatedUser != null || this.authenticatedUser.isAuthenticated() == true){
+        if(this.authenticatedUser != null){
             post.setAuthor(authenticatedUser);
             posts.add(post);
             message = "Postagem publicada com sucesso!";
@@ -94,12 +91,7 @@ public class SocialNetwork
     }
     
     public void searchFor(String text){
-        if (posts.stream().anyMatch(post -> post.search(text) == true)) {
-            System.out.println("The term '" + text + "' was found in: \n");
-            posts.stream().filter(post -> post.search(text) == true).forEach(post -> post.show());
-        } else {
-            System.out.println("The term '" + text + "' was not found\n");
-        }       
+        posts.stream().filter(post -> post.search(text) == true).forEach(post -> {System.out.println("The term '" + text + "' was found in: \n"); post.show();});
     }
     
     public void showNotifications(){

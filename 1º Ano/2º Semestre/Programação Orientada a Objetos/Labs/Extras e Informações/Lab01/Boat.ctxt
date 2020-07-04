@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Boat
+comment0.text=\r\n\ Escreva\ a\ descri\u00E7\u00E3o\ da\ classe\ Boat\ aqui.\r\n\ \r\n\ @author\ (seu\ nome)\ \r\n\ @version\ (n\u00FAmero\ de\ vers\u00E3o\ ou\ data)\r\n
+comment1.params=numberOfFishermen\ name\ status
+comment1.target=Boat(int,\ java.lang.String,\ BoatStatus)
+numComments=2
