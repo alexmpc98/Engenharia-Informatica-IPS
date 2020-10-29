@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Json</title>
+</head>
+<body>
+
+    <script>
+        function send_json() {
+
+            console.log("Sending JSON request");
+
+            var req = new XMLHttpRequest();
+            req.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                    var status = req.status;
+                    var content_type = req.getResponseHeader("Content-Type");
+
+                    var string = "Status code: " + status + "\n";
+                    string += "Content-Type: " + content_type + "\n"
+                    string += "\n" + req.responseText;
+                    document.getElementById("json_response").value = string;
+                }
+                console.log(req.status);
+            };
+
+            var json_content = document.getElementById("json").value;
+
+            req.open("POST", "/json");
+            req.setRequestHeader("Content-Type", "application/json");
+            req.send(json_content);
+        }
+    </script>
+
+    <h1>Json</h1>
+    <textarea id="json" name="json" rows="10" cols="80">
+{
+    "username": "manuel",
+    "password": "1234"
+}
+    </textarea>
+
+    <br/>
+    <button onclick="send_json()">Send JSON</button>
+    <br/>
+
+    <textarea id="json_response" name="json_response" rows="10" cols="80"></textarea>
+</body>
+</html>

@@ -1,0 +1,75 @@
+html,body {
+    height:100%;
+}
+#page_body {
+    width: 100%;
+}
+#left_div, #subtitle_left_div {
+    width: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#right_div, #subtitle_right_div  {
+    width: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#subtitle_div {
+    width: 100%;
+    display: flex;
+}
+#tables_div {
+    width: 100%;
+    display: flex;
+}
+.titles {
+    text-align: center;
+    margin-top: 15px;
+}
+.subtitles {
+    text-align: center;
+    display: compact;
+}
+#user {
+    width: 100%;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+}
+#project_form_div {
+    text-align: center;
+    padding-top: 15px;
+}
+#task_form_div {
+    text-align: center;
+    padding-top: 15px;
+}
+form {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    display: block;
+}
+button {
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+}
+#form_user_details, #form_login, #form_register {
+    width: 270px;
+    margin: 25px auto;
+    text-align: center;
+}
+tr.complete_tr td, tr.complete_tr th {
+    background-color: transparent;
+}
+tr.complete_tr {
+    background-color: rgba(114, 193, 35, 0.25) !important;
+}
+#projects td, #projects th {
+    background-color: transparent;
+}
+.alert {
+    margin-top: 10px;
+}
+.complete_td {
+    text-align: center;
+}
