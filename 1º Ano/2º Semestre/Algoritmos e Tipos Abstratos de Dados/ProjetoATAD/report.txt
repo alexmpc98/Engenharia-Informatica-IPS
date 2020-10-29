@@ -1,0 +1,19 @@
+Korea  Mortality: 0.01%  Incident Rate: 0.00%  Lethality: 3.06%
+South Korea  unknown (no population data)
+Busan  Mortality: 0.01%  Incident Rate: 0.00%  Lethality: 6.67%
+Chungcheongbuk-do  Mortality: 0.00%  Incident Rate: 0.00%  Lethality: 0.00%
+Chungcheongnam-do  Mortality: 0.00%  Incident Rate: 0.00%  Lethality: 0.00%
+Daegu  Mortality: 0.08%  Incident Rate: 0.00%  Lethality: 33.90%
+Daejeon  Mortality: 0.00%  Incident Rate: 0.00%  Lethality: 0.00%
+Gangwon-do  Mortality: 0.01%  Incident Rate: 0.00%  Lethality: 7.14%
+Gwangju  Mortality: 0.00%  Incident Rate: 0.00%  Lethality: 0.00%
+Gyeonggi-do  Mortality: 0.00%  Incident Rate: 0.00%  Lethality: 0.18%
+Gyeongsangbuk-do  Mortality: 0.13%  Incident Rate: 0.02%  Lethality: 5.94%
+Gyeongsangnam-do  Mortality: 0.00%  Incident Rate: 0.00%  Lethality: 0.00%
+Incheon  Mortality: 0.00%  Incident Rate: 0.00%  Lethality: 0.00%
+Jeju-do  Mortality: 0.00%  Incident Rate: 0.00%  Lethality: 0.00%
+Jeollabuk-do  Mortality: 0.00%  Incident Rate: 0.00%  Lethality: 0.00%
+Jeollanam-do  Mortality: 0.00%  Incident Rate: 0.00%  Lethality: 0.00%
+Sejong  Mortality: 0.00%  Incident Rate: 0.01%  Lethality: 0.00%
+Seoul  Mortality: 0.00%  Incident Rate: 0.00%  Lethality: 0.00%
+Ulsan  Mortality: 0.01%  Incident Rate: 0.00%  Lethality: 9.09%

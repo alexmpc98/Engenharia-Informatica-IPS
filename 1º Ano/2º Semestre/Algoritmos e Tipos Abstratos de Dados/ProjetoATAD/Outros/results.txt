@@ -1,0 +1,109 @@
+>AVERAGE	
+Average Age for deceased patients:	74
+Average Age for released patients: 	42
+Average Age for isolated patients: 	47
+
+
+>FOLLOW 1000000003
+ Following Patient : ID:1000000003, SEX:male, AGE: 56,COUNTRY/REGION: Korea /Seul, STATE: released 
+ contaminated by Patient : ID:2002000001 : does not exist record
+ 
+>FOLLOW 1000000174
+ Following Patient : ID:1000000174, SEX:male, AGE: 27,COUNTRY/REGION: Korea /Seul, STATE: isolated 
+ contaminated by Patient: ID:1000000124, SEX:male, AGE: 27,COUNTRY/REGION: Korea /Seul, STATE: isolated 
+ contaminated by Unknown
+ 
+>SEX
+Percentage of Females: 55%
+Percentage of Males: 42%
+Percentage of unknowns: 3%
+Total of patients: 3128
+
+>SHOW 1000000003
+
+ID:1000000003
+SEX: male
+AGE: 56
+COUNTRY/REGION: Korea /Seul
+INFECTION REASON: contact with patient
+STATE: released
+NUMBER OF DAYS WITH ILLNESS: 20
+
+
+>SHOW 1000000020
+
+ID:1000000020
+SEX: female
+AGE: 76
+COUNTRY/REGION: Korea /Seul
+INFECTION REASON: Seongdong-gu APT
+STATE: isolated
+NUMBER OF DAYS WITH ILLNESS: 34
+
+
+ 
+>TOP5
+
+ID:1600000004
+SEX: female
+AGE: 62
+COUNTRY/REGION: Korea /Ulsan
+INFECTION REASON: contact with patient
+STATE: released
+NUMBER OF DAYS WITH ILLNESS: 41
+
+ID:6001000097
+SEX: female
+AGE: 58
+COUNTRY/REGION: Korea /Gyeongsangbuk-do
+INFECTION REASON: unknown
+STATE: released
+NUMBER OF DAYS WITH ILLNESS: 40
+
+ID:6001000096
+SEX: female
+AGE: 35
+COUNTRY/REGION: Korea /Ulsan
+INFECTION REASON: unknown
+STATE: released
+NUMBER OF DAYS WITH ILLNESS: 40
+
+ID:6001000082
+SEX: male
+AGE: 69
+COUNTRY/REGION: Korea /Gyeongsangbuk-do
+INFECTION REASON: unknown
+STATE: released
+NUMBER OF DAYS WITH ILLNESS: 39
+
+ID:6001000020
+SEX: male
+AGE: 62
+COUNTRY/REGION: Korea /Gyeongsangbuk-do
+INFECTION REASON: unknown
+STATE: released
+NUMBER OF DAYS WITH ILLNESS: 39
+
+>OLDEST
+
+FEMALE:
+1- ID:6001000503, SEX:female, AGE: 104,COUNTRY/REGION: Korea /Gyeongsangbuk-do, STATE: isolated 
+
+MALE:
+1- ID:2000000379, SEX:male, AGE: 94,COUNTRY/REGION: Korea /Gyeonggi-do, STATE: isolated 
+2- ID:6008000044, SEX:male, AGE: 94,COUNTRY/REGION: Korea /Gyeongsangbuk-do, STATE: isolated 
+
+>GROWTH 27/02/2020
+
+Date:<26/02/2020>
+Number of deads: 2:
+Number of infected: 125
+
+Date:<27/02/2020>
+Number of deads: 3:
+Number of infected: 115
+
+Rate of infections: -8%
+Rate of dead: 50%
+
+

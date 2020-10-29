@@ -1,0 +1,25 @@
+var files_dup =
+[
+    [ "disk.c", "disk_8c.html", "disk_8c" ],
+    [ "disk.h", "disk_8h.html", "disk_8h" ],
+    [ "hanoiGame.c", "hanoiGame_8c.html", "hanoiGame_8c" ],
+    [ "hanoiGame.h", "hanoiGame_8h.html", "hanoiGame_8h" ],
+    [ "hanoiGamePlus.c", "hanoiGamePlus_8c.html", "hanoiGamePlus_8c" ],
+    [ "main1.c", "main1_8c.html", "main1_8c" ],
+    [ "main2.c", "main2_8c.html", "main2_8c" ],
+    [ "main3.c", "main3_8c.html", "main3_8c" ],
+    [ "main4.c", "main4_8c.html", "main4_8c" ],
+    [ "main5.c", "main5_8c.html", "main5_8c" ],
+    [ "move.c", "move_8c.html", "move_8c" ],
+    [ "move.h", "move_8h.html", "move_8h" ],
+    [ "queue.h", "queue_8h.html", "queue_8h" ],
+    [ "queueArrayList.c", "queueArrayList_8c.html", "queueArrayList_8c" ],
+    [ "queueElem.c", "queueElem_8c.html", "queueElem_8c" ],
+    [ "queueElem.h", "queueElem_8h.html", "queueElem_8h" ],
+    [ "queueLinkedList.c", "queueLinkedList_8c.html", "queueLinkedList_8c" ],
+    [ "stack.h", "stack_8h.html", "stack_8h" ],
+    [ "stackArrayList.c", "stackArrayList_8c.html", "stackArrayList_8c" ],
+    [ "stackElem.c", "stackElem_8c.html", "stackElem_8c" ],
+    [ "stackElem.h", "stackElem_8h.html", "stackElem_8h" ],
+    [ "stackLinkedList.c", "stackLinkedList_8c.html", "stackLinkedList_8c" ]
+];

@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['hanoi_5finvalid_11',['HANOI_INVALID',['../hanoiGame_8h.html#ae167fdb7b627e0d4f0af235d1c82bdeb',1,'hanoiGame.h']]],
+  ['hanoi_5fnull_12',['HANOI_NULL',['../hanoiGame_8h.html#a961d69fa05f4d37d5a8251c880abce6d',1,'hanoiGame.h']]],
+  ['hanoi_5fok_13',['HANOI_OK',['../hanoiGame_8h.html#ae07d2f32950c17291167c6bcd0808f98',1,'hanoiGame.h']]],
+  ['hanoigame_14',['hanoiGame',['../structhanoiGame.html',1,'']]],
+  ['hanoigame_2ec_15',['hanoiGame.c',['../hanoiGame_8c.html',1,'']]],
+  ['hanoigame_2eh_16',['hanoiGame.h',['../hanoiGame_8h.html',1,'']]],
+  ['hanoigamecheckgameover_17',['hanoiGameCheckGameOver',['../hanoiGame_8c.html#a6d206fef3d67748025245ed6c6df09e6',1,'hanoiGameCheckGameOver(PtHanoiGame ptGame):&#160;hanoiGame.c'],['../hanoiGame_8h.html#a6d206fef3d67748025245ed6c6df09e6',1,'hanoiGameCheckGameOver(PtHanoiGame ptGame):&#160;hanoiGame.c'],['../hanoiGamePlus_8c.html#a6d206fef3d67748025245ed6c6df09e6',1,'hanoiGameCheckGameOver(PtHanoiGame ptGame):&#160;hanoiGamePlus.c']]],
+  ['hanoigameclear_18',['hanoiGameClear',['../hanoiGamePlus_8c.html#a27e86986fe30a4bf34b1fa4f4216c1d0',1,'hanoiGamePlus.c']]],
+  ['hanoigamecreate_19',['hanoiGameCreate',['../hanoiGame_8c.html#a168da8bb7e0ca4a8b0d981616a9ebd7a',1,'hanoiGameCreate():&#160;hanoiGame.c'],['../hanoiGame_8h.html#a168da8bb7e0ca4a8b0d981616a9ebd7a',1,'hanoiGameCreate():&#160;hanoiGame.c'],['../hanoiGamePlus_8c.html#a168da8bb7e0ca4a8b0d981616a9ebd7a',1,'hanoiGameCreate():&#160;hanoiGamePlus.c']]],
+  ['hanoigamedestroy_20',['hanoiGameDestroy',['../hanoiGame_8c.html#a6ec61f2c0ff77a4dad719dab480fe761',1,'hanoiGameDestroy(PtHanoiGame *ptGame):&#160;hanoiGame.c'],['../hanoiGame_8h.html#a6ec61f2c0ff77a4dad719dab480fe761',1,'hanoiGameDestroy(PtHanoiGame *ptGame):&#160;hanoiGame.c'],['../hanoiGamePlus_8c.html#a6ec61f2c0ff77a4dad719dab480fe761',1,'hanoiGameDestroy(PtHanoiGame *ptGame):&#160;hanoiGamePlus.c']]],
+  ['hanoigameinit_21',['hanoiGameinit',['../hanoiGame_8c.html#ac3d82f9d033ce65afa5ae09c15f80e8e',1,'hanoiGameinit(PtHanoiGame ptGame, int n):&#160;hanoiGame.c'],['../hanoiGame_8h.html#ac3d82f9d033ce65afa5ae09c15f80e8e',1,'hanoiGameinit(PtHanoiGame ptGame, int n):&#160;hanoiGame.c'],['../hanoiGamePlus_8c.html#ac3d82f9d033ce65afa5ae09c15f80e8e',1,'hanoiGameinit(PtHanoiGame ptGame, int n):&#160;hanoiGamePlus.c']]],
+  ['hanoigamemakemove_22',['hanoiGameMakeMove',['../hanoiGame_8c.html#a542df28fa555bdcf611ff30521c5b4d7',1,'hanoiGameMakeMove(PtHanoiGame ptGame, Move move):&#160;hanoiGame.c'],['../hanoiGame_8h.html#a542df28fa555bdcf611ff30521c5b4d7',1,'hanoiGameMakeMove(PtHanoiGame ptGame, Move move):&#160;hanoiGame.c'],['../hanoiGamePlus_8c.html#a542df28fa555bdcf611ff30521c5b4d7',1,'hanoiGameMakeMove(PtHanoiGame ptGame, Move move):&#160;hanoiGamePlus.c']]],
+  ['hanoigameplus_2ec_23',['hanoiGamePlus.c',['../hanoiGamePlus_8c.html',1,'']]],
+  ['hanoigameprint_24',['hanoiGamePrint',['../hanoiGame_8c.html#ab2b21a1d7b1709aea1155456040829ce',1,'hanoiGamePrint(PtHanoiGame ptGame):&#160;hanoiGame.c'],['../hanoiGame_8h.html#ab2b21a1d7b1709aea1155456040829ce',1,'hanoiGamePrint(PtHanoiGame ptGame):&#160;hanoiGame.c'],['../hanoiGamePlus_8c.html#ab2b21a1d7b1709aea1155456040829ce',1,'hanoiGamePrint(PtHanoiGame ptGame):&#160;hanoiGamePlus.c']]],
+  ['hanoigamevalidatepos_25',['hanoiGameValidatePos',['../hanoiGame_8c.html#ad3d007f5dd25d3e18ac2d41bb4764822',1,'hanoiGameValidatePos(int t):&#160;hanoiGame.c'],['../hanoiGame_8h.html#a8dfb125d0e9be8ec17fb89e678a5a10f',1,'hanoiGameValidatePos(int towerNumber):&#160;hanoiGame.c'],['../hanoiGamePlus_8c.html#ad3d007f5dd25d3e18ac2d41bb4764822',1,'hanoiGameValidatePos(int t):&#160;hanoiGamePlus.c']]],
+  ['hanoireplaygame_26',['hanoiReplayGame',['../hanoiGame_8h.html#afaf0073a21d678cb01078994cf228d90',1,'hanoiReplayGame(PtHanoiGame ptGame):&#160;hanoiGamePlus.c'],['../hanoiGamePlus_8c.html#afaf0073a21d678cb01078994cf228d90',1,'hanoiReplayGame(PtHanoiGame ptGame):&#160;hanoiGamePlus.c']]],
+  ['header_27',['header',['../structqueueImpl.html#ac519c0266826556397d14d9b686fae19',1,'queueImpl::header()'],['../structstackImpl.html#a190df7e697de8c62cbc0dfe33afd5ba7',1,'stackImpl::header()']]]
+];
