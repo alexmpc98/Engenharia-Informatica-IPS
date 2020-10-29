@@ -1,0 +1,9 @@
+Quanto ao nosso plano de Backups, definimos a seguinte estrutura:
+[ANEXO]
+
+Sendo que os nossos Full Backups estão planeados para a 00:00(UTC), 
+os Full com Transactional Log são feitos hora a hora e os diferenciais são executados duas vezes ao dia, 
+uma ao 12:00, outra as 22:00, previamente ao full que é efetuado a 00:00 diariamente (como referido anteriormente).
+No caso de ocorrer um erro, deverá ser executado o backup de tail.
+Temos também backups parciais que guardam todos os files e filegroups destinados a cada schema. Deve ser feito um backup destes
+quando é efetuada um grande tráfico de operações a um determinado schema.
