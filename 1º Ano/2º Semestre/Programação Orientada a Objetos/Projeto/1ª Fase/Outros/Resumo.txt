@@ -1,0 +1,1 @@
+Este programa é um jogo de blockudoku, este é composto por 2 menus um menu inicial com 4 opções e o menu de jogo com 2 opções para escolher o modo de jogo. Nestes menus o jogador por consultar as suas pontuações, continuar um jogo gravado, ver o top 10 de pontuações, jogar um nobo jogo, escolher o modo, etc.
