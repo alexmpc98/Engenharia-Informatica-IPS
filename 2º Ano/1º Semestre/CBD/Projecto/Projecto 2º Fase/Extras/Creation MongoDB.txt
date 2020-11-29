@@ -1,0 +1,21 @@
+mongoimport --db test --collection inventory ^
+          --authenticationDatabase admin --username <user> --password <password> ^
+          --drop --file ~\Desktop\Produtos.txt
+		  
+		  
+		  
+		  
+		  
+		  
+mongoimport --db AdventureWorksMDB --collection Produtos --file /Desktop/Produtos.txt
+mongoimport --db AdventureWorksMDB --collection Clientes --file /Desktop/Clientes.txt
+
+
+
+
+cd C:\Program Files\MongoDB\Server\4.2\bin
+Mongo –port 27017
+use AdventureWorksMDB
+db.createCollection('Produtos')
+
+db.createCollection('Clientes')

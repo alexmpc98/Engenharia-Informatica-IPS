@@ -165,6 +165,7 @@ EXEC Accounts.spNewUserAccount 'sergio.verissimo@adventureworks.com';
 EXEC Accounts.spAddQuestionUser 'O projecto tem quantas fases?','Duas',2;
 EXEC Accounts.spAddQuestionUser 'CBD é a minha cadeira favorita?','Sim',2;
 EXEC Accounts.spAddQuestionUser 'Vamos reprovar?', 'Espero que não',2;
+EXEC Accounts.spNewUserAccount 'sergio.verissimo@adventureworks.com'; 
 
 -- Trigger Login Ativo --
 GO
@@ -444,4 +445,7 @@ select * from Managements.ErrorLog;
 select * from dbo.Error;
 */
 
+select * from Products.Product;
 
+
+--EXEC sp_spaceused;

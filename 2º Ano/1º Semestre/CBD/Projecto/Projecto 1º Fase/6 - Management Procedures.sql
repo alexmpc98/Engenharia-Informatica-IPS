@@ -1,3 +1,9 @@
+c.
+Definir uma promoção na encomenda d. 
+Alterar as datas de Início e Fim de uma promoção 
+(não deve ser possível atribuir uma promoção que não esteja ativa) e. Alterar o Estado dos Produtos 
+No 
+
 -- Associate to Sub-Category (its associated with Category)
 GO
 CREATE OR ALTER PROCEDURE Products.spAssociateProductSubCategory
@@ -46,8 +52,9 @@ END
 exec Products.spAssociateProductSubCategory 'All-Purpose Bike Stand','Mountain Bikes'
 
 
+select * from Products.ProductPromotion;
 
--- Associate Promotion to Sale
+
 GO
 CREATE OR ALTER PROCEDURE Sales.spAssociatePromotionToSale
 (@SalesOrderNumber varchar(13), @PromotionKey int)
@@ -136,3 +143,5 @@ END
 
 EXEC Sales.spAssociatePromotionToSale 'SO51187',3
 
+
+CREATE OR ALTER PROCEDURE

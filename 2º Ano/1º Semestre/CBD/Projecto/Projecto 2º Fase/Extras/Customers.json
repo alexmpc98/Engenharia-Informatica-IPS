@@ -1,0 +1,55 @@
+#Customer1#
+
+{
+_id:1,
+firstname:"Orlando",
+lastname:"Gee",
+emailaddress:"orlando0@adventure-works.com",
+phone:[2455550173],
+addresses:{
+line:"8713 Yosemite Ct.",
+city:"Bothell"
+}
+}
+
+#Customers2#
+
+[
+{
+_id:2,
+firstname:"Keith",
+lastname:"Harris",
+emailaddress:"keith0@adventure-works.com",
+phone:[2445550112,1925550173],
+addresses:{
+line:"1318 Lasalle Street",
+city:"Bothell"
+}
+},
+{
+_id:3,
+firstname:"Donna",
+lastname:"Carreras",
+emailaddress:"odonna0@adventure-works.com",
+addresses:[{
+line:"8713 Yosemite Ct.",
+city:"Bothell"
+},
+{
+line:"7943 Walnut Ave",
+city:"Quebec"
+}
+]
+},
+{
+_id:4,
+firstname:"Janet",
+lastname:"Gates",
+emailaddress:"janet1@adventure-works.com",
+phone:[2455550173],
+addresses:{
+line:"52560 Free Street",
+city:"Toronto"
+}
+}
+]

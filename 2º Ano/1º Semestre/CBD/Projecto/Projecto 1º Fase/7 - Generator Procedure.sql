@@ -56,16 +56,21 @@ IF (@NumericPrecision IS NOT NULL)
     SET @SQLUpdate += ' (@' + @ColumnName  + ' '  + @ColumnType + ' (' + @NumericPrecision + ')';
 	END
 	END
+	PRINT '1'
+	PRINT concat('SQL DELETE - ' , @SQLDelete)
+	PRINT concat('SQL INSERT - ' , @SQLInsert)
 SET @SQLDelete += ') AS 
 BEGIN
 DELETE FROM [' + @Schema + '].[' + @TableName + '] WHERE ' + @ColumnName + ' = @' + @ColumnName + '; 
 END';
+	PRINT '2'
 SET @ColumnName = ''
 SET @ColumnType = ''
 SET @NumericPrecision = '--'
 
 WHILE @@FETCH_STATUS = 0
 BEGIN
+PRINT 'WHILE'
 
 IF (COLUMNPROPERTY(OBJECT_ID(@Schema + @TableName), @ColumnName, 'IsPrimary') = 1)
 	BEGIN
@@ -116,6 +121,7 @@ IF (COLUMNPROPERTY(OBJECT_ID(@Schema+@TableName),@ColumnName, 'AllowsNull') = 0)
 	END
 SET @SQLUpdate += ' UPDATE [' + @Schema + '].[' + @TableName + '] SET ' + @ColumnName + ' = ' + @TableValues
 FETCH NEXT FROM @QueryInfo INTO @ColumnName, @CharacterMaximumLength, @NumericPrecision, @ColumnType, @Ordinal	
+PRINT @SQLInsert
 END
 
 CLOSE @QueryInfo

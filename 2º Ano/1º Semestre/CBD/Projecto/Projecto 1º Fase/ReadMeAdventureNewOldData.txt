@@ -1,2 +1,2 @@
 O ficheiro .bak da AdventureNewData, possui apenas a criação da BD e a migração de dados feita, sem ter os filegroups aplicados. 
-Para aplicar os filegroups e o resto dos passos, deve seguir os passo do capitulo 11
+Para aplicar os filegroups e o resto dos passos, deve seguir os passos do capitulo 11
