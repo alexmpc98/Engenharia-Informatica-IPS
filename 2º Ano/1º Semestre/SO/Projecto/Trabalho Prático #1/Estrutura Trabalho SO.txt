@@ -1,0 +1,26 @@
+1ª PARTE
+1 - int weights[] = {2,4,6,7};
+    int values[] = {6,10,12,13};
+    int n = 4;
+    int max_weight = 11;
+    int knapsack [] = {1,0,0,0}
+
+2 - int calc_value (int *values, int *knapsack, int n) {}
+    int calc_weight (int *weights, int *knapsack, int n) {}
+
+3 - Modificar o saco -> Escolher uma posição random, 0 -> 1 ou 1 -> 0 (Formula -> Trocar bit x=1-x)
+
+4 - for i = 1..10
+
+5 - Guardar as melhores soluções -> peso inferior ao máximo
+
+6 - Forks (Melhores soluções em memória partilhada)
+    ou Leitura de ficheiros
+
+2ª PARTE
+1 - Fazer forks (2)
+    Filhos for() {Print}
+2 - Guardar melhor solução na memória partilhada (mem_path)
+3 - Filhos While(1) -> pai sleep e mata os filhos
+4 - Ler dos ficheiros (Ler dados e fazer o calculos)
+
