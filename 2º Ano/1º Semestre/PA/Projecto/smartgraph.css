@@ -1,0 +1,113 @@
+/*
+STYLESHEET FOR JAVAFXGRAPH VISUALIZATION
+*/
+
+.graph {
+    -fx-background-color: #F4FFFB;    
+}
+
+.vertex-blue {
+    -fx-stroke-width: 3;
+    -fx-stroke: #61B5F1;
+    -fx-stroke-type: inside; /* you should keep this if using arrows */
+    -fx-fill: #B1DFF7;
+}
+
+.vertex-green {
+    -fx-stroke-width: 3;
+    -fx-stroke: #01DC22;
+    -fx-stroke-type: inside; /* you should keep this if using arrows */
+    -fx-fill: #33FF52;
+}
+
+.vertex-label {
+    -fx-font: bold 8pt "sans-serif";
+}
+
+.edge-red {
+    -fx-stroke-width: 2;
+    -fx-stroke: #ff0000;
+    -fx-stroke-dash-array: 2 5 2 5; /* remove for clean edges */  
+    -fx-fill: transparent; /*important for curved edges */
+    -fx-stroke-line-cap: round;
+    -fx-opacity: 0.8;
+}
+
+.edge-black {
+    -fx-stroke-width: 2;
+    -fx-stroke: #000000;
+    -fx-stroke-dash-array: 2 5 2 5; /* remove for clean edges */
+    -fx-fill: transparent; /*important for curved edges */
+    -fx-stroke-line-cap: round;
+    -fx-opacity: 0.8;
+}
+
+.edge-orange {
+    -fx-stroke-width: 2;
+    -fx-stroke: #ff8c00;
+    -fx-stroke-dash-array: 2 5 2 5; /* remove for clean edges */
+    -fx-fill: transparent; /*important for curved edges */
+    -fx-stroke-line-cap: round;
+    -fx-opacity: 0.8;
+}
+
+.myEdge {
+    -fx-stroke-width: 2;
+    -fx-stroke: green;
+    -fx-stroke-dash-array: 2 5 2 5; /* remove for clean edges */
+    -fx-fill: transparent; /*important for curved edges */
+    -fx-stroke-line-cap: round;
+    -fx-opacity: 0.8;
+}
+
+.edge-label {
+    -fx-font: bold 8pt "sans-serif";
+}
+
+.arrow-red {
+    -fx-stroke-width: 2;
+    -fx-stroke: #ff0000;
+    -fx-opacity: 0.8;
+}
+
+.arrow-black {
+    -fx-stroke-width: 2;
+    -fx-stroke: #000000;
+    -fx-opacity: 0.8;
+}
+
+.arrow-orange {
+    -fx-stroke-width: 2;
+    -fx-stroke: #ff8c00;
+    -fx-opacity: 0.8;
+}
+
+/* Custom vertex. You should revert any unwanted styling in the default element, 
+   style, since custom styles will be appended to the default style */
+.myVertex {
+    -fx-stroke-width: 5;
+    -fx-stroke: green;
+    -fx-stroke-type: inside; /* you should keep this if using arrows */
+    -fx-fill: yellowgreen;
+}
+
+.vertex-cost {
+    -fx-stroke-width: 3;
+    -fx-stroke: #c003ff;
+    -fx-stroke-type: inside; /* you should keep this if using arrows */
+    -fx-fill: #6f3782;
+}
+.edge-cost {
+    -fx-stroke-width: 2;
+    -fx-stroke: #c003ff;
+    -fx-stroke-dash-array: 2 5 2 5; /* remove for clean edges /
+    -fx-fill: transparent; /important for curved edges */
+    -fx-stroke-line-cap: round;
+    -fx-opacity: 0.8;
+}
+
+.arrow-cost {
+    -fx-stroke-width: 2;
+    -fx-stroke: #c003ff;
+    -fx-opacity: 0.8;
+    }

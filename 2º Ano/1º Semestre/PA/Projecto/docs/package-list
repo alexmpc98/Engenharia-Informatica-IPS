@@ -1,0 +1,15 @@
+
+com.pa.proj2020.adts.graph
+exceptions
+patterns.Statistics
+patterns.command
+patterns.factory
+patterns.mvc
+patterns.mvc.controller
+patterns.mvc.model
+patterns.mvc.view
+patterns.observer
+patterns.singleton
+smartgraph.view
+smartgraph.view.containers
+smartgraph.view.graphview

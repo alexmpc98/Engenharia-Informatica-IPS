@@ -1,0 +1,5 @@
+Ordem - 2
+Altura - 3
+Travessia em-ordem - A B C D E F G
+Travessia pré-ordem - C B A F E D G
+Travessia pós-ordem - A B D E G F C

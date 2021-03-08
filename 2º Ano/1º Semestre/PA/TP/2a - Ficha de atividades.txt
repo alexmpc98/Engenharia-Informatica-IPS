@@ -1,0 +1,10 @@
+Raiz - P
+Nós nivel 2 - A B C D
+Altura da Arvore - 4
+Nós internos - Q A L R C M
+Nós externos - E F G B D H I
+Grau do nó B - 0
+Grau do nó L - 3
+Caminho de G até raiz - G->L->A->Q->P
+Travessia pré-ordem - P Q A L E F G B R C M H I D
+Travessia pós ordem - E F G L A B Q H I M C D R P

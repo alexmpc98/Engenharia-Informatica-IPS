@@ -1,0 +1,5 @@
+Para evitar a duplicação de testes usamos a herança de classes. Sendo que a classe pai é a QueueTest,
+e a classe filho é a QueueLinkedListTest, nesta execução/resolução de laboratório.
+
+Embora fora utilizado a herança, achei diversos artigos que recomendam a não utilização de herança nos testes. Mas consegui encontrar
+muitos exemplos em que são utilizadas interfaces de modo a evitar o uso de herança.
