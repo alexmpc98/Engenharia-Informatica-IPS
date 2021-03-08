@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="releases">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/ADT_Tree.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

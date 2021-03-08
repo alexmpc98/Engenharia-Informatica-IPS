@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="TADStackBase">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../TADStackBase.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
