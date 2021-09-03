@@ -1,0 +1,13 @@
+Mes	Temperatura	Vapor
+Jan	21	185,79
+Fev	24	214,47
+Mar	320	288,03
+Abr	47	424,84
+Maio	50	454,58
+Junho	59	539,03
+Julho	68	621,55
+Ago	74	675,06
+Set	62	562,03
+Out	50	452,93
+Nov	41	369,95
+Dez	30	273,98
