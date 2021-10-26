@@ -1,0 +1,35 @@
+Questões Lab1 - ESA:
+
+1.1) Quais as tarefas que compõem o processo?
+R: 
+1ª - Envio da carta de requerimento com as informações especificas do processo do 
+Departamento de Controlo para o Diretor de Área;
+2ª - Inserção do requisito no sistema pelo Diretor de Área, com atribuição da pessoa que responde ao requisito em questão, 
+e com a consequente data de expiração para essa mesma resposta;
+3ª - O funcionário realiza um relatório de resposta, efetua uma revisão do caso e insere a sua resposta;
+4ª - Essa resposta é analisada e avaliada pelo Diretor de Área antes de ser enviada para o Departamento de Controlo;
+5ª - Caso a resposta não seja definitiva, após devida indicação, a pessoa que a efetuou pode fazer alterações;
+6ª - Caso o Diretor de Área considere a resposta definitiva, gera-se a carta de resposta, imprimi-se e esta é enviada para
+o Departamento de Controlo.
+
+1.2) Quais são as pessoas que executam cada uma das tarefas?
+R:
+1ª - Funcionário que está presente no processo no Departamento de Controlo;
+2ª - Diretor de Área;
+3ª - O funcionário;
+4ª - Diretor de Área;
+5ª - O funcionário;
+6ª - Diretor de Área.
+
+1.3) Como é que o processo é iniciado e terminado? Por quem e quando?
+R: O processo é iniciado com o envio da carta de requerimento para o Diretor de Área através do Departamento de Controlo, 
+e é finalizado com o envio da carta de resposta para o Departamento de Controlo através do Diretor de Área.
+
+1.4) Onde (em que departamento ou seção da empresa) é que as tarefas são realizadas?
+R:
+1ª - Departamento de Controlo;
+2ª - Direção da Área;
+3ª - Secretaria;
+4ª - Direção da Área;
+5ª - Secretaria;
+6ª - Direção da Área.

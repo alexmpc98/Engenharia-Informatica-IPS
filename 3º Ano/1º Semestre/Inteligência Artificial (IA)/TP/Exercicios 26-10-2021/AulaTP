@@ -1,0 +1,13 @@
+(defun fresolvente(a b c)
+  (list (/ (- (* b -1) (sqrt (- (* b b) (* 4 a c)))) (* 2 a)) (/ (+ (* b -1) (sqrt (- (* b b) (* 4 a c)))) (* 2 a)) )
+)
+
+
+(defun maximo(list)
+  (cond
+     ((null list) nil)
+     ((null (cdr list)) (car list))
+     ((< (first list) (second list)) (maximo(cdr list)))
+     (t (maximo(cons (car list) (cddr list))))
+   )
+)
