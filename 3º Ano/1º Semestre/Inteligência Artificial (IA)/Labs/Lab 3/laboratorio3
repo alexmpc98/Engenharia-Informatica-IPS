@@ -1,0 +1,135 @@
+;;;; 1. entre-intervalo: Altere a função definida anteriormente para passar a receber 2 argumentos, que
+;;;; são um número e uma lista. A lista deverá ter sempre 2 elementos, que representam o intervalo ao qual se pretende testar se o número pertence.
+(defun entre-intervalo (x list)
+ (if (and (numberp x) (> x (first list)) (< x (second list)))
+ (format t "~d é maior que ~d e menor que ~d" x (first list) (second list)) ; verdadeiro
+ (format t "~d não é um número entre ~d e ~d" x (first list) (second list)) ; falso
+ )
+)
+
+;;;; 2. max-3: Sem recorrer à função max pré-definida no Lisp, use os operadores lógicos e condições que
+;;;; achar necessárias para encontrar o maior número entre 3 número passados como argumento.
+
+(defun max-3 (a b c)
+  (cond
+   ((and (numberp a) (> a b) (> a c)) (format t "O  número maior é o ~d " a))
+   ((and (numberp b) (> b a) (> b c)) (format t "O número maior é o ~d" b))
+   (t (format t "O número maior é o ~d" c))
+  )
+)
+
+;;;; 3. restop: Recebe três argumentos, nomeadamente o dividendo, divisor e o resto. Verifica se o resto da
+;;;; divisão entre os primeiros 2 números é igual ao valor passado como argumento, retornando T
+;;;; (verdadeiro) ou NIL (falso). Caso o divisor seja 0 deve-se retornar NIL.
+
+(defun restop (a b c)
+  (cond
+    ((and (numberp b) (= b 0)) nil) 
+    ((and (numberp a) (= (mod a b) c)) t)
+    (t nil)
+   )
+)
+
+;;;; 4. aprovadop: De uma lista de 4 notas passada como argumento, em que a primeira nota é de
+;;;; Matemática, a segunda de História, a terceira de Ciências e a última de Português, pretende-se saber se
+;;;; o aluno está aprovado. Um aluno aprova, se as notas de Matemática e Português forem superiores ou
+;;;; iguais a 9.5 ou se a média de todas as notas for superior ou igual a 9.5. A função representa um
+;;;; predicado, por isso deverá retornar T (verdadeiro) ou NIL (falso).
+(defun aprovadop (list)
+  (cond
+    ((and (numberp (first list)) (numberp (second list)) (>= (first list) 9.5) (>= (fourth list) 9.5)) t)
+    ((and (numberp (first list)) (numberp (second list)) (numberp (third list)) (numberp (fourth list)) 
+    (>= (/ (+ (first list) (second list) (third list) (fourth list))(length list)) 9.5)) t)
+    (t nil)
+   )
+)
+
+;;;; 5. nota-final: Recebe duas listas como argumento, em que a primeira contém as notas (lista com 3
+;;;; elementos) e a segunda as respetivas ponderações. Deve-se calcular as notas mediante as
+;;;; ponderações, de modo a produzir a nota final. A lista com as ponderações somadas deve dar 100 e não
+;;;; devem haver notas inferiores a 0 ou superiores a 20. Exemplo: (10 12 15) (25 25 50) significa que
+;;;; as notas foram 10, 12 e 15, e que a primeira e a segunda correspondem a 25% da nota final e a terceira
+;;;; a 50% da nota final.
+(defun nota-final(a-list b-list)
+  (cond
+    ((and (numberp (first b-list)) (numberp (second b-list)) (numberp (third b-list)) (numberp (first a-list)) (numberp (second a-list)) (numberp (third a-list))
+          (= (+ (first b-list) (second b-list) (third b-list)) 100) (> (first a-list) 0) (> (second a-list) 0) (> (third a-list) 0) (< (first a-list) 20) (< (second a-list) 20)
+          (< (third a-list) 20)) (+ (* (first a-list) (/(first b-list) 100)) (* (second a-list) (/(second b-list) 100)) (* (third a-list) (/(third b-list) 100))))
+    (t nil)
+   )
+)
+
+
+;;;; 6. produto-somas: Recebe duas listas de números com 3 elementos cada. Esta função adiciona os seus
+;;;; membros e devolve o produto dessas adições.
+(defun produto-somas (a-list b-list)
+  (*(+ (first a-list) (first b-list))(+ (second a-list) (second b-list))(+ (third a-list) (third  b-list)))
+)
+
+;;;; 7. junta-listas-tamanho-igual: Recebe duas listas como argumento e caso tenham o mesmo
+;;;; tamanho junta-as numa só lista (recorrendo à função append). Se as listas não tiverem o mesmo
+;;;; tamanho, a lista a ser retornada deverá ser a de maior tamanho.
+
+(defun junta-listas-tamanho-igual(a-list b-list)
+  (cond
+    ((= (length a-list) (length b-list)) (append a-list b-list))
+    ((> (length a-list) (length b-list)) a-list)
+    (t b-list)
+  )
+)
+
+;;;; 8. dois-ultimos-elementos: Recebe uma lista e devolve uma lista com os dois últimos elementos
+;;;; presentes nela. Utilize a função reverse ou nth para o auxiliar a ir buscar os dois últimos elementos.
+;;;; Deve testar se a lista está vazia (recorrendo à função null) e se o tamanho da lista é superior a 2
+
+(defun dois-ultimos-elementos(list)
+  (cond
+   ((null list) nil)
+   ((> (length list) 2) (list (first (reverse list)) (second (reverse list))))
+   (t nil)
+  )
+)
+
+;;;; 9. palindromop: Verificar se o inverso de uma lista é igual à própria lista passada como argumento
+(defun palindromop(list)
+  (cond
+    ((equal list (reverse list)) t)
+    (t nil)
+  )
+)
+
+
+;;;; 10. criar-pares: Crie uma função que recebe duas listas de 3 elementos e devolve uma lista com o
+;;;; conjunto de pares criado a partir das duas listas. Se as listas não forem do mesmo tamanho ou
+;;;; estiverem vazias, devolva NIL.
+(defun criar-pares(a-list b-list)
+  (cond
+    ((= (length a-list) (length b-list)) (list (list (first a-list) (first b-list)) (list (second a-list) (second b-list)) (list (third a-list) (third b-list))))
+    (t nil)
+   )
+)
+
+;;;; 11. verifica-pares: Recebe uma lista de 4 elementos, e devolve uma lista de igual tamanho com T caso
+;;;; o elemento seja par e NIL caso não seja
+(defun verifica-pares(list)
+  (list (evenp (first list)) (evenp (second list)) (evenp (third list)) (evenp (fourth list))) 
+)
+
+
+;;;; 12. rodar: Permite fazer a rotação à esquerda ou à direita de uma lista de 4 elementos.
+(defun rodar(list string)
+  (cond 
+    ((equal string 'esq) (list (fourth list) (first list) (second  list) (third list)))
+    ((equal string 'dir) (list (second list) (third list) (fourth list) (first list)))
+    (t nil)
+  )
+)
+
+;;;; 13. rodar-listas: Implemente uma variante da função anterior que permita fazer as rotações para listas de tamanho arbitrário.
+(defun rodar-listas(list string)
+  (cond 
+   ((equal string 'esq) (cons (car (reverse list)) (reverse (cdr (reverse list)))))
+   ((equal string 'dir) (append (cdr list) (list (car list))))
+   (t nil)
+  )
+)
