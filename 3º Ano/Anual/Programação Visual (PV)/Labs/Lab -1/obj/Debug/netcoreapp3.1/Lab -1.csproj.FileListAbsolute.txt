@@ -1,0 +1,14 @@
+C:\Users\alexa\Desktop\PV\Labs\Lab -1\bin\Debug\netcoreapp3.1\Lab -1.exe
+C:\Users\alexa\Desktop\PV\Labs\Lab -1\bin\Debug\netcoreapp3.1\Lab -1.deps.json
+C:\Users\alexa\Desktop\PV\Labs\Lab -1\bin\Debug\netcoreapp3.1\Lab -1.runtimeconfig.json
+C:\Users\alexa\Desktop\PV\Labs\Lab -1\bin\Debug\netcoreapp3.1\Lab -1.runtimeconfig.dev.json
+C:\Users\alexa\Desktop\PV\Labs\Lab -1\bin\Debug\netcoreapp3.1\Lab -1.dll
+C:\Users\alexa\Desktop\PV\Labs\Lab -1\bin\Debug\netcoreapp3.1\Lab -1.pdb
+C:\Users\alexa\Desktop\PV\Labs\Lab -1\obj\Debug\netcoreapp3.1\Lab -1.csproj.AssemblyReference.cache
+C:\Users\alexa\Desktop\PV\Labs\Lab -1\obj\Debug\netcoreapp3.1\Lab -1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\Desktop\PV\Labs\Lab -1\obj\Debug\netcoreapp3.1\Lab -1.AssemblyInfoInputs.cache
+C:\Users\alexa\Desktop\PV\Labs\Lab -1\obj\Debug\netcoreapp3.1\Lab -1.AssemblyInfo.cs
+C:\Users\alexa\Desktop\PV\Labs\Lab -1\obj\Debug\netcoreapp3.1\Lab -1.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Desktop\PV\Labs\Lab -1\obj\Debug\netcoreapp3.1\Lab -1.dll
+C:\Users\alexa\Desktop\PV\Labs\Lab -1\obj\Debug\netcoreapp3.1\Lab -1.pdb
+C:\Users\alexa\Desktop\PV\Labs\Lab -1\obj\Debug\netcoreapp3.1\Lab -1.genruntimeconfig.cache
