@@ -35,8 +35,8 @@
 ;; n-esimo
 (defun n-esimo(n l)
   (cond
-     ((equal (+ (length l) 1) n) (car l))
-     (t (n-esimo n (cdr l)))
+    ((zerop n) (car l))
+     (t (n-esimo (- n 1) (cdr l)))
    )
 )
 
