@@ -1,0 +1,5 @@
+(defun escreve_numero(n)
+  (format t "O número é ~D" n)
+)
+
+(defun sequencia_numeros(

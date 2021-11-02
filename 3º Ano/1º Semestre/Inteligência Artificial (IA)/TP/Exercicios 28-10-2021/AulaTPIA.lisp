@@ -28,6 +28,10 @@
    )
 )
 
+(defun sum-square-higher(list)
+   (apply '+ (mapcar #'sqrt list))
+)
+
 (defun count-odds(list)
  (cond
   ((null list) 0)
@@ -35,3 +39,8 @@
   (t (count-odds (cdr list)))
   )
 )
+
+(defun impares(list)
+  (apply #'+ (mapcar (lambda(x)(if(oddp x) 1 0)) list))
+)
+

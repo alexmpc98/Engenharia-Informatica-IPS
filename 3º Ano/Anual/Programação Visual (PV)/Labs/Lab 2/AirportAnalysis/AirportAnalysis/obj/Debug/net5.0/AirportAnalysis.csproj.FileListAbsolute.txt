@@ -1,0 +1,16 @@
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 2\AirportAnalysis\AirportAnalysis\bin\Debug\net5.0\AirportAnalysis.exe
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 2\AirportAnalysis\AirportAnalysis\bin\Debug\net5.0\AirportAnalysis.deps.json
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 2\AirportAnalysis\AirportAnalysis\bin\Debug\net5.0\AirportAnalysis.runtimeconfig.json
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 2\AirportAnalysis\AirportAnalysis\bin\Debug\net5.0\AirportAnalysis.runtimeconfig.dev.json
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 2\AirportAnalysis\AirportAnalysis\bin\Debug\net5.0\AirportAnalysis.dll
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 2\AirportAnalysis\AirportAnalysis\bin\Debug\net5.0\ref\AirportAnalysis.dll
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 2\AirportAnalysis\AirportAnalysis\bin\Debug\net5.0\AirportAnalysis.pdb
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 2\AirportAnalysis\AirportAnalysis\obj\Debug\net5.0\AirportAnalysis.csproj.AssemblyReference.cache
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 2\AirportAnalysis\AirportAnalysis\obj\Debug\net5.0\AirportAnalysis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 2\AirportAnalysis\AirportAnalysis\obj\Debug\net5.0\AirportAnalysis.AssemblyInfoInputs.cache
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 2\AirportAnalysis\AirportAnalysis\obj\Debug\net5.0\AirportAnalysis.AssemblyInfo.cs
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 2\AirportAnalysis\AirportAnalysis\obj\Debug\net5.0\AirportAnalysis.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 2\AirportAnalysis\AirportAnalysis\obj\Debug\net5.0\AirportAnalysis.dll
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 2\AirportAnalysis\AirportAnalysis\obj\Debug\net5.0\ref\AirportAnalysis.dll
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 2\AirportAnalysis\AirportAnalysis\obj\Debug\net5.0\AirportAnalysis.pdb
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 2\AirportAnalysis\AirportAnalysis\obj\Debug\net5.0\AirportAnalysis.genruntimeconfig.cache

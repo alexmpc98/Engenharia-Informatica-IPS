@@ -1,0 +1,34 @@
+(defun escreve_numero(n)
+  (format t "O número é ~D" n)
+)
+
+(defun read_numbers()
+  (princ "Insira um numero - ")
+  (let ((n (read)))
+  ;;(setq n (read))
+  (cond
+   ((zerop n) nil)
+   (t (cons n (sequencia_numeros))))
+  )
+)
+
+(defun sequencia_numeros()
+  (cond
+     ((null (read_numbers)) nil)
+     (t (ordernar (read_numbers)))
+   )
+)
+
+(defun ordernar()
+  (cond
+    ((null (read_numbers)) nil)
+    (t 1)
+)
+)
+;;;(defun ordernar()
+;;;  ((null l) read_numbers)
+;;  (cond
+;    ((> (first l) (second l)) (append (cdr l) (list (car l))))
+;    ((< (f 
+;   )
+;)
