@@ -1,0 +1,14 @@
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 1\Lab1\obj\Debug\netcoreapp3.1\Lab1.csproj.AssemblyReference.cache
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 1\Lab1\obj\Debug\netcoreapp3.1\Lab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 1\Lab1\obj\Debug\netcoreapp3.1\Lab1.AssemblyInfoInputs.cache
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 1\Lab1\obj\Debug\netcoreapp3.1\Lab1.AssemblyInfo.cs
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 1\Lab1\obj\Debug\netcoreapp3.1\Lab1.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 1\Lab1\bin\Debug\netcoreapp3.1\Lab1.exe
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 1\Lab1\bin\Debug\netcoreapp3.1\Lab1.deps.json
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 1\Lab1\bin\Debug\netcoreapp3.1\Lab1.runtimeconfig.json
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 1\Lab1\bin\Debug\netcoreapp3.1\Lab1.runtimeconfig.dev.json
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 1\Lab1\bin\Debug\netcoreapp3.1\Lab1.dll
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 1\Lab1\bin\Debug\netcoreapp3.1\Lab1.pdb
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 1\Lab1\obj\Debug\netcoreapp3.1\Lab1.dll
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 1\Lab1\obj\Debug\netcoreapp3.1\Lab1.pdb
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 1\Lab1\obj\Debug\netcoreapp3.1\Lab1.genruntimeconfig.cache
