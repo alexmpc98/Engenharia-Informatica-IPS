@@ -1,0 +1,12 @@
+Atores:
+- Funcionários;
+- Diretor Financeiro;
+- Torniquetes;
+- Sistema.
+
+Use cases:
+- Funcionários -> Efetuam inscrição de sócio; Criam o cartão de sócio; Podem substituir cartões danificados;
+- Diretor Financeiro -> Altera o desconto da anuidade para um sócio;
+- Torniquetes -> Validam o acesso às várias salas do ginásio;
+-> Sistema -> Verifica diariamente as datas de validade dos atestados médicos e da inscrição anual;
+Notifica o sócio sobre a chegada desse prazo de validade com 30 dias de antecedência.
