@@ -17,6 +17,9 @@ namespace AirportAnalysis
             } */
 
             // Testes LinQ
+
+            ////////////////////////////////////////////////////--- Nivel 1 ---///////////////////////////////////////////
+
             /* 1.1
             List<string> orderderAirports = (from air in airports where air.IsSchengen == true orderby air.AirportICAO select air.AirportICAO).ToList();
             foreach (string s in orderderAirports)
@@ -41,6 +44,9 @@ namespace AirportAnalysis
             {
                 Console.WriteLine(s);
             }*/
+
+            ////////////////////////////////////////////////////--- Nivel 2 ---///////////////////////////////////////////
+
             /* 2.2 && 2.3
             airports.Add(new Airport { AirportId = 46, AirportICAO = "EGCC", Country = "United Kingdom", City = "MANCHESTER", IsSchengen = true, DailyFlightAverage = 20000 });
             airports.Add(new Airport { AirportId = 47, AirportICAO = "EGJJ", Country = "United Kingdom", City = "JERSEY", IsSchengen = true, DailyFlightAverage = 10000 });
@@ -56,6 +62,9 @@ namespace AirportAnalysis
             {
                 Console.WriteLine(s);
             } */
+
+            ////////////////////////////////////////////////////--- Nivel 3 ---///////////////////////////////////////////
+
             /* 3
             var flightsByCountry = (from air in airports group air.DailyFlightAverage by air.Country into ar 
                                              select new { Country = ar.Key, DailyFlights = ar.Sum() });
@@ -76,10 +85,71 @@ namespace AirportAnalysis
                 Console.WriteLine("Country with least flights -> " + a3);
             }
             */
+
+            ////////////////////////////////////////////////////--- Nivel 4 ---///////////////////////////////////////////
+
+            /*4.1
+            var airportOrdByCity = airports.OrderBy(ord => ord.City);
+            foreach(var ordair in airportOrdByCity)
+            {
+                Console.WriteLine(ordair);
+            }*/
+            /*4.2
+            var airportsWithoutRepeatedCountries = airports.Select(woutCountry => woutCountry.Country).Distinct();
+            foreach(var withoutCountry in airportsWithoutRepeatedCountries)
+            {
+                Console.WriteLine(withoutCountry);
+            } */
+            /* 4.3
+            bool inferiorDailyAverage = airports.Any(dAvg => dAvg.DailyFlightAverage < 5000);
+            Console.WriteLine(inferiorDailyAverage);
+            */
+            /* 4.4 
+            double averageFligthsAll = airports.Average(avg => avg.DailyFlightAverage);
+            Console.WriteLine(averageFligthsAll);
+            */
+
+            ////////////////////////////////////////////////////--- Nivel 5 ---///////////////////////////////////////////
+
+            /* 5.1
+            var topFive = airports.OrderByDescending(x => x.DailyFlightAverage).
+                Where(x => x.DailyFlightAverage < 100000 && x.IsSchengen != true).Take(5);
+            foreach(var air in topFive)
+            {
+                Console.WriteLine(air);
+            }
+            */
+            /* 5.2
+            var topFiveSkip = airports.OrderByDescending(x => x.DailyFlightAverage).
+                Where(x => x.DailyFlightAverage < 100000 && x.IsSchengen != true).Skip(5).Take(5);
+            foreach(var air in topFiveSkip)
+            {
+                Console.WriteLine(air);
+            }*/
+            /* 5.3
+            var germanAirports = airports.OrderBy(x => x.City).ThenBy(x => x.AirportICAO).
+                Where(country => country.Country == "Germany");
+            foreach(var gerAir in germanAirports)
+            {
+                Console.WriteLine(gerAir);
+            } */
+            /* 5.4
+            var cityGermany = airports.Where(c => c.Country == "Germany")
+                .GroupBy(ci => ci.City, (k , info) => new { City = k, AirportInfo = info.ToList() });
             
-
-
-
+            
+            foreach (var gerAirByCity in cityGermany)
+            {
+                Console.WriteLine("City of " + gerAirByCity.City + " : ");
+                foreach (Airport airTest in gerAirByCity.AirportInfo)
+                {
+                    Console.WriteLine(airTest.AirportICAO  + " // "
+                        + airTest.AirportId  + " // "
+                        + "Is Schengen: " + airTest.IsSchengen + " // "
+                        + airTest.DailyFlightAverage);
+                }
+            }
+            */
         }
     }
 }
