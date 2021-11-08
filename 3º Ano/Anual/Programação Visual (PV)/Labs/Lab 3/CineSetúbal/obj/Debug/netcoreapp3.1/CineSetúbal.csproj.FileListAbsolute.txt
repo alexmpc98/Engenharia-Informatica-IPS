@@ -112,3 +112,5 @@ C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Vi
 C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 3\CineSetúbal\obj\Debug\netcoreapp3.1\CineSetúbal.pdb
 C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 3\CineSetúbal\obj\Debug\netcoreapp3.1\CineSetúbal.genruntimeconfig.cache
 C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 3\CineSetúbal\obj\Debug\netcoreapp3.1\Razor\Views\Home\FilmeDoDia.cshtml.g.cs
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 3\CineSetúbal\obj\Debug\netcoreapp3.1\Razor\Views\Filmes\Cartazes.cshtml.g.cs
+C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 3\CineSetúbal\obj\Debug\netcoreapp3.1\Razor\Views\Filmes\Estreia.cshtml.g.cs

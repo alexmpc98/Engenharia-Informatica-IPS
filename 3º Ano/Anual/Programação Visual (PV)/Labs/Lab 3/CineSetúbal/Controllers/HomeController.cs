@@ -85,6 +85,12 @@ namespace CineSetúbal.Controllers
             return View();
         }
 
+        public IActionResult DescarregarBilhete()
+        {
+            return File("~/documents/" + this.filmes[0].Titulo + 
+                ".pdf", "application/pdf", this.filmes[0].Titulo + ".pdf");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

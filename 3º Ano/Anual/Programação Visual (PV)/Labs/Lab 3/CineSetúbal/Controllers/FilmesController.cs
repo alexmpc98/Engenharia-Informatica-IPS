@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace CineSetúbal.Controllers
 {
-    public class Filmes : Controller
+    public class FilmesController : Controller
     {
         List<Filme> filmes;
-        public Filmes()
+        public FilmesController()
         {
             filmes = new List<Filme> {
                  new Filme
@@ -55,6 +55,12 @@ namespace CineSetúbal.Controllers
         {
             return View();
         }
+        public IActionResult Estreia()
+        {
+            List<Filme> debutList = this.filmes.Where(debut => debut.Estreia == true).ToList();
+            return View(debutList);
+        }
+
         public IActionResult Cartazes()
         {
             return View(this.filmes);
