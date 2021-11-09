@@ -80,9 +80,9 @@
 ;; percentagem-de-aprovados
 ;; (percentagem-aprovados (turma-1))
 ;; 80.0
-(defun percentagem-aprovados(l)
+(defun percentagem-aprovados(f l)
   (let ((size (length l)))
-    (* (/ (apply '+ (mapcar #'(lambda(aluno)(if(<= (media-das-notas (notas aluno)) 9.5) 0 1)) l)) size) 100)
+    (* (/ (apply '+ (mapcar #'(lambda(aluno)(if(< (funcall f (notas aluno)) 9.5) 0 1)) l)) size) 100)
    )
 )
 
@@ -92,18 +92,11 @@
 ;; Teste: (lista-dos-aprovados (turma-1))
 ;; Teste avaliar-turma: (avaliar-turma 'lista-dos-aprovados (turma-1))
 ;; (("Joao" "Silva") ("Ana" "Santos") NIL ("Elisabete" "Navarro") ("Mario" "Rodrigues"))
-(defun lista-dos-aprovados(l)
-   (mapcar #'(lambda(aluno)(if(>=(media-das-notas(notas aluno))9.5)(append (list (nome aluno))(list (apelido aluno))))) l)
-)
-
 
 
 ;; todos-aprovadosp
 ;; (todos-aprovadosp (turma-1))
 ;; NIL
-(defun todos-aprovadosp(turma &aux(aprovados (lista-dos-aprovados turma)))
-  (eval(cons 'and (mapcar #' (lambda(aluno)(not (null aluno))) aprovados)))
-)
 
 
 ;;avaliar-turma
@@ -112,19 +105,10 @@
 ;; 11.6666
 ;; (avaliar-turma (turma-1) 'percentagem-aprovados )
 ;; 80.0
-(defun avaliar-turma(l &optional (funcao 'lista-dos-aprovados))
-  (funcall funcao l)
-)
+
 
 ;; existep
 ;; (existep "Joao" "Silva" (turma-1)
 ;; T
-(defun existep(n a l)
-   (eval (cons 'or (mapcar #'(lambda(aluno)(cond
-     ((and (equal n (nome aluno))(equal a (apelido aluno))) t))) l)
-  ))
-)
-
-
 
 
