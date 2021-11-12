@@ -2,31 +2,35 @@
 
 <div>
     <h4>Filme</h4>
-    <hr />
-    <dl class="row">
-        @foreach (var item in Model) { 
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Titulo)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(modelItem => item.Titulo)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Diretor)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(modelItel => item.Diretor)
-        </dd>
+    <hr />@foreach (var item in Model)
+    {
+        <dl class="row">
 
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Ano)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(modelItem => item.Ano)
-        </dd>
-        }
-    </dl>
-</div>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Titulo)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(modelItem => item.Titulo)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Diretor)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(modelItel => item.Diretor)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Ano)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(modelItem => item.Ano)
+            </dd>
+
+            
+        </dl>
+        <hr />
+    }
+    </div>
 <div>
     @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
     <a asp-action="Index">Back to List</a>
