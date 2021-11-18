@@ -224,11 +224,17 @@ A função verifica que os valores lidos pertencem ao intervale esperado para cada
   (cond
     ((equal op 'encher-a) 
       (cond
-        (= (encher-a (car no)) nil) nil)
-        (t (list (encher-a (car no)) (+ (no-profundidade no) 1)  no)))
-    ((equal op 'encher-b) (list (encher-b (car no)) (+ (no-profundidade no) 1)  no))
+        ((equal (encher-a (car no)) nil) nil)
+        (t (list (encher-a (car no)) (+ (no-profundidade no) 1)  no))))
+    ((equal op 'encher-b) 
+        (cond
+         ((equal (encher-b (car no)) nil) nil)
+         (t (list (encher-b (car no)) (+ (no-profundidade no) 1)  no))
+         ))
     ((equal op 'transferir-a-b) (list (transferir-a-b (car no)) (+ (no-profundidade no) 1) no))
     ((equal op 'transferir-b-a) (list (transferir-b-a (car no)) (+ (no-profundidade no) 1) no))
+    ((equal op 'vazar-a) (list (vazar-a (car no)) (+ (no-profundidade no) 1) no))
+    ((equal op 'vazar-b) (list (vazar-b (car no)) (+ (no-profundidade no) 1) no))
    ) 
 )
 
@@ -236,6 +242,19 @@ A função verifica que os valores lidos pertencem ao intervale esperado para cada
 ;; resultado: (((0 2) 1 ((2 2) 0 NIL)) ((2 0) 1 ((2 2) 0 NIL)) ((3 2) 1 ((2 2) 0 NIL)) ((2 5) 1 ((2 2) 0 NIL)) ((0 4) 1 ((2 2) 0 NIL)) ((3 1) 1 ((2 2) 0 NIL)))
 ;; teste: (sucessores (no-teste) (operadores) 'dfs 2)
 ;; resultado: (((0 2) 1 ((2 2) 0 NIL)) ((2 0) 1 ((2 2) 0 NIL)) ((3 2) 1 ((2 2) 0 NIL)) ((2 5) 1 ((2 2) 0 NIL)) ((0 4) 1 ((2 2) 0 NIL)) ((3 1) 1 ((2 2) 0 NIL)))
+(defun sucessores(no oplist algoritmo &optional maxprofundidade)
+  (cond
+    ((equal algoritmo 'dfs) 
+      (cond 
+        ((equal maxprofundidade (no-profundidade no)) nil)
+        (t (list (novo-sucessor no (first oplist)) (novo-sucessor no (second oplist)) (novo-sucessor no (third oplist)) (novo-sucessor no (fourth oplist))
+                 (novo-sucessor no (fifth oplist)) (novo-sucessor no (sixth oplist))))
+      ))
+    ((equal algoritmo 'bfs) 
+       (list (novo-sucessor no (first oplist)) (novo-sucessor no (second oplist)) (novo-sucessor no (third oplist)) (novo-sucessor no (fourth oplist))
+                 (novo-sucessor no (fifth oplist)) (novo-sucessor no (sixth oplist))))
+   )
+)
 
 
 ;;; Algoritmos

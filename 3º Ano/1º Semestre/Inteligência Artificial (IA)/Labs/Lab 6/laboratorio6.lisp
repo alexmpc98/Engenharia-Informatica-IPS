@@ -247,8 +247,11 @@ A função verifica que os valores lidos pertencem ao intervale esperado para cada
     ((equal algoritmo 'dfs) 
       (cond 
         ((equal maxprofundidade (no-profundidade no)) nil)
-        (t (list (novo-sucessor no (first oplist)) (novo-sucessor no (second oplist)) (novo-sucessor no (third oplist)) (novo-sucessor no (fourth oplist))
+        (t 
+         ; (cond 
+             (list (novo-sucessor no (first oplist)) (novo-sucessor no (second oplist)) (novo-sucessor no (third oplist)) (novo-sucessor no (fourth oplist))
                  (novo-sucessor no (fifth oplist)) (novo-sucessor no (sixth oplist))))
+          ;)
       ))
     ((equal algoritmo 'bfs) 
        (list (novo-sucessor no (first oplist)) (novo-sucessor no (second oplist)) (novo-sucessor no (third oplist)) (novo-sucessor no (fourth oplist))
