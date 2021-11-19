@@ -1,0 +1,54 @@
+﻿@model ESTeCard.Models.PrePaidCard
+
+@{
+    ViewData["Title"] = "Create";
+}
+@Html.Partial("_CreditCard");
+
+<h1>Create</h1>
+
+<h4>PrePaidCard</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="id" class="control-label"></label>
+                <input asp-for="id" class="form-control" />
+                <span asp-validation-for="id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="name" class="control-label"></label>
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="entity" class="control-label"></label>
+                <input asp-for="entity" class="form-control" />
+                <span asp-validation-for="entity" class="text-danger"></span>
+            </div>
+            <!-- <div class="form-group">
+        <label asp-for="code" class="control-label"></label>
+        <input asp-for="code" class="form-control" />
+        <span asp-validation-for="code" class="text-danger"></span>
+    </div>-->
+            <div class="form-group">
+                <label asp-for="credit" class="control-label"></label>
+                <input asp-for="credit" class="form-control" />
+                <span asp-validation-for="credit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

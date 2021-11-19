@@ -1,0 +1,67 @@
+﻿@model IEnumerable<ESTeCard.Models.PrePaidCard>
+
+    @{
+    ViewData["Title"] = "Index";
+    }
+
+    <h1>Index</h1>
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <form asp-action="Index">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label class="control-label"></label>
+            <input id ="submitId" name = "submitId" class="form-control" />
+            <span  class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Index" class="btn btn-primary" />
+        </div>
+    </form>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.entity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.credit)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.entity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.credit)
+                </td>
+                <td> @Html.ActionLink("Edit", "Edit", new { id = item.id })</td>
+                <!-- <td>
+                    @@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @@Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>-->
+            </tr>
+
+            }
+        </tbody>
+    </table>
