@@ -86,7 +86,7 @@
 ;substituir-posicao definida anteriormente
 (defun substituir(posx posy tabuleiro &optional (value 1))
     (cond
-      ((= posy 0)(cons (substituir-posicao posx (linha posy tabuleiro)) (cdr tabuleiro)))
+      ((= posy 0)(cons (substituir-posicao posx (linha posy (tabuleiro-vazio))) (cdr tabuleiro)))
       (t (cons (car tabuleiro)(substituir posx (- posy 1)(cdr tabuleiro) value)))
     )
 )
@@ -101,8 +101,8 @@
    (cond
      ((equal peca 'peca-a)(list (list posx posy)))
      ((equal peca 'peca-b)(list (list posx posy) (list posx (+ posy 1))(list (+ posx 1) posy)(list (+ posx 1)(+ posy 1))))
-     ((equal peca 'peca-c-1)(list (list posx posy)(list posx (+ posy 1))(list (- posx 1) (+ posy 1))(list (- posx 1)(+ posy 2))))
-     ((equal peca 'peca-c-2)(list (list posx posy) (list (+ posx 1) posy) (list (+ posx 1) (+ posy 1))(list (+ posx 2)(+ posy 1))))
+     ((equal peca 'peca-c-1)(list (list posx posy) (list (+ posx 1) posy) (list (+ posx 1) (+ posy 1))(list (+ posx 2)(+ posy 1))))
+     ((equal peca 'peca-c-2)(list (list posx posy)(list posx (+ posy 1))(list (- posx 1) (+ posy 1))(list (- posx 1)(+ posy 2))))
      (t nil)
    )
 )
@@ -130,55 +130,12 @@
 ;limites do tabuleiro
 (defun peca-b(posx posy tabuleiro)
   (cond
-   ((and(>= posx 0)(>= posy 0)(< posx 13)(< posy 13))
+   ((and(>= posx 0)(>= posy 0)(< posx 14)(< posy 14))
   (cond
-    ((equal (check-all posx posy tabuleiro 'peca-b) t)        
-     (substituir (car (car (cdddr (peca-casas-ocupadas posx posy 'peca-b))))  (car (cdr (car (cdddr (peca-casas-ocupadas posx posy 'peca-b))))) ;; 4 iterações 
-              (substituir (caar (cddr (peca-casas-ocupadas posx posy 'peca-b)))  (car ( cdr (car (cdr (cdr (peca-casas-ocupadas posx posy 'peca-b)))))) ;; Tabuleiro = Função Anterior
-              (substituir (caar (cdr (peca-casas-ocupadas posx posy 'peca-b)))  (car (cdr (car (cdr (peca-casas-ocupadas posx posy 'peca-b))))) 
-              (substituir (car(car(peca-casas-ocupadas posx posy 'peca-b))) (car(cdr(car(peca-casas-ocupadas posx posy 'peca-b)))) tabuleiro))))
-     
-      )
-    (t nil)
-   ))
-   (t nil)
-  )
-)
-
-;11. peca-c-1: Função que recebe dois índices e o tabuleiro e coloca a peça esse na posição de lado no
-;tabuleiro tendo como ponto de referência o índice passado como argumento. A função deverá retornar
-;NIL caso alguma das casas a serem preenchidas não esteja vazia ou caso a peça esteja a ser colocada
-;fora dos limites do tabuleiro.
-(defun peca-c-1(posx posy tabuleiro)
-  (cond
-   ((and(>= posx 0)(>= posy 0)(< posx 13)(< posy 12))
-  (cond
-    ((equal (check-all posx posy tabuleiro 'peca-c-1) t)     
-     (substituir (car (cdr (car (cdddr (peca-casas-ocupadas posx posy 'peca-c-1))))) (car (car (cdddr (peca-casas-ocupadas posx posy 'peca-c-1)))) ;; 4 iterações 
-              (substituir (car ( cdr (car (cdr (cdr (peca-casas-ocupadas posx posy 'peca-c-1))))))(caar (cddr (peca-casas-ocupadas posx posy 'peca-c-1))) ;; Tabuleiro = Função Anterior
-              (substituir (car (cdr (car (cdr (peca-casas-ocupadas posx posy 'peca-c-1))))) (caar (cdr (peca-casas-ocupadas posx posy 'peca-c-1))) 
-              (substituir (car(cdr(car(peca-casas-ocupadas posx posy 'peca-c-1))))(car(car(peca-casas-ocupadas posx posy 'peca-c-1))) tabuleiro))))     
-      )
-    (t nil)
-   ))
-   (t nil)
-  )
-)
-
-;;12. peca-c-2: Função que recebe dois índices e o tabuleiro e coloca a peça esse na posição para cima no
-;;tabuleiro tendo como ponto de referência o índice passado como argumento. A função deverá retornar
-;;NIL caso alguma das casas a serem preenchidas não esteja vazia ou caso a peça esteja a ser colocada
-;;fora dos limites do tabuleiro.
-(defun peca-c-2(posx posy tabuleiro)
-  (cond
-   ((and(>= posx 0)(>= posy 0)(< posx 12)(< posy 13))
-  (cond
-    ((equal (check-all posx posy tabuleiro 'peca-c-2) t)     
-     (substituir (car (cdr (car (cdddr (peca-casas-ocupadas posx posy 'peca-c-2))))) (car (car (cdddr (peca-casas-ocupadas posx posy 'peca-c-2)))) ;; 4 iterações 
-              (substituir (car ( cdr (car (cdr (cdr (peca-casas-ocupadas posx posy 'peca-c-2))))))(caar (cddr (peca-casas-ocupadas posx posy 'peca-c-2))) ;; Tabuleiro = Função Anterior
-              (substituir (car (cdr (car (cdr (peca-casas-ocupadas posx posy 'peca-c-2))))) (caar (cdr (peca-casas-ocupadas posx posy 'peca-c-2))) 
-              (substituir (car(cdr(car(peca-casas-ocupadas posx posy 'peca-c-2))))(car(car(peca-casas-ocupadas posx posy 'peca-c-2))) tabuleiro))))     
-      )
+    ((equal (check-all posx posy tabuleiro) t) (substitute-all tabuleiro (peca-casas-ocupadas posx posy 'peca-b) (length (peca-casas-ocupadas posx posy 'peca-b))))
+     ;;(substituir (car(car(peca-casas-ocupadas posx posy 'peca-b))) (car(car(cdr(peca-casas-ocupadas posx posy 'peca-b)))) tabuleiro))
+     ;;Não Funciona com este mapcar, adicionar mais lista - dúvidas
+     ;;(mapcar #'(lambda(positions)(peca-a (car positions)(car(cdr positions)) tabuleiro)) (peca-casas-ocupadas posx posy 'peca-b)))
     (t nil)
    ))
    (t nil)
@@ -186,28 +143,18 @@
 )
 
 
-
-
-;;; --------------------------- Funções Auxiliares ----------------------------------
-(defun check-all(posx posy tabuleiro peca)
+(defun substitute-all(tabuleiro index n) 
    (cond
-    ((equal peca 'peca-b)
-     (cond 
-      ((= (check-nil(mapcar #'(lambda(positions)(casa-vaziap (car positions)(car(cdr positions)) tabuleiro)) (peca-casas-ocupadas posx posy 'peca-b))) 0) t)
-      (t nil)
-      ))
-    ((equal peca 'peca-c-1)
-    (cond 
-      ((= (check-nil(mapcar #'(lambda(positions)(casa-vaziap (car positions)(car(cdr positions)) tabuleiro)) (peca-casas-ocupadas posx posy 'peca-c-1))) 0) t)
-      (t nil)
-      ))
-    ((equal peca 'peca-c-2)
-     (cond 
-      ((= (check-nil(mapcar #'(lambda(positions)(casa-vaziap (car positions)(car(cdr positions)) tabuleiro)) (peca-casas-ocupadas posx posy 'peca-c-2))) 0) t)
-      (t nil)
-      ))
-    (t nil)
-   )
+      ((= n 0) nil)
+     ; (t (substituir (car index)(car(cdr index)) tabuleiro)  (substitute-all tabuleiro (cdr index) (- n 2)))
+      (t (substitute-all (substituir (car index)(car(cdr index)) tabuleiro) (cdr index) (- n 2)))
+    )
+)
+(defun check-all(posx posy tabuleiro)
+   (cond 
+     ((= (check-nil(mapcar #'(lambda(positions)(casa-vaziap (car positions)(car(cdr positions)) tabuleiro)) (peca-casas-ocupadas posx posy 'peca-b))) 0) t)
+     (t nil)
+    )
 )
 
 (defun check-nil(l)
