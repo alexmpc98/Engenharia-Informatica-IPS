@@ -114,7 +114,7 @@
   (cond
    ((and(>= posx 0)(>= posy 0)(< posx 14)(< posy 14))
   (cond
-    ((equal (casa-vaziap posx posy tabuleiro) T)(substituir posx posy tabuleiro))
+    ((equal (casa-vaziap posx posy tabuleiro) T)(substituir (car (cdr (car(peca-casas-ocupadas posx posy 'peca-a)))) (car (car (peca-casas-ocupadas posx posy 'peca-a)))  tabuleiro))
      ;;Funciona com este mapcar, mas adiciona mais 1 lista
      ;;(mapcar #'(lambda(positions)(substituir (car positions)(car(cdr positions)) tabuleiro)) (peca-casas-ocupadas posx posy 'peca-a)))
     (t nil)

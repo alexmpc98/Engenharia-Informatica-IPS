@@ -1,0 +1,54 @@
+﻿@model ESTeSoccer.Models.Team
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div>
+    <h4>@Model.Name </h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Initials)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Initials)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FoundingDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FoundingDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NumberOfTitles)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NumberOfTitles)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MainColor)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MainColor)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.League)
+        </dt>
+        <dd class="col-sm-10">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Leagues" asp-action="Details"
+               asp-route-id="@Model.LeagueId">
+                @Html.DisplayFor(model => model.League.Name) </a>
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.TeamId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,39 @@
+﻿@model ESTeSoccer.Models.League
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>@Model.Name / @Model.Country</h1>
+
+<div>
+    <h4>League</h4>
+    <hr />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Teams)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        <a asp-action="Details" asp-controller="Teams" asp-route-id="@item.TeamId">Details</a> |
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.LeagueId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

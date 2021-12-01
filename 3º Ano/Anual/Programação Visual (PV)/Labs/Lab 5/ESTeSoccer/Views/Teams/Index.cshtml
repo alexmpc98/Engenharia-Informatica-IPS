@@ -1,0 +1,64 @@
+﻿@model IEnumerable<ESTeSoccer.Models.Team>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Equipas</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.League)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Initials)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FoundingDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfTitles)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MainColor)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.League.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Initials)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FoundingDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfTitles)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MainColor)
+            </td>
+            <td>
+                <a asp-action="ListPlayers" asp-controller = "Teams" asp-route-id="@item.TeamId">Jogadores</a> |
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

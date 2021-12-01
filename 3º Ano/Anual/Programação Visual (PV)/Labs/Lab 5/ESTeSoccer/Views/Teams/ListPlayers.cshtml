@@ -1,0 +1,51 @@
+﻿@model ESTeSoccer.Models.Team
+
+@{
+    ViewData["Title"] = "ListPlayers";
+}
+
+<h1>@Model.Name</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Players.First().Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players.First().DateOfBirth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players.First().MarketValue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Players.First().Team)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Players) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfBirth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MarketValue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Team.Initials)
+            </td>
+            <td>
+                <a asp-action="Details" asp-controller = "Players" asp-route-id="@item.Playerid">Details</a> |
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
