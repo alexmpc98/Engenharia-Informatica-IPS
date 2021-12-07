@@ -1,0 +1,11 @@
+(defun cria-no(pergunta sim nao)
+    (list pergunta sim nao)
+)
+
+(defun no-teste()
+  (cria-no "Tem Asas" '("Voa" "Pardal" "Avestruz") '("Mamifero" "Cão" "Rã"))
+)
+
+(defun novo-sucessor(no)
+  (mapcar #'(lambda(ask)(cria-no (nth 0 no)(nth 1 no)(nth 2 no))) (cdr no)) 
+)

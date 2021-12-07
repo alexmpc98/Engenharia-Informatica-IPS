@@ -1,0 +1,58 @@
+(defun cria-no(pergunta sim nao)
+    (list pergunta sim nao)
+)
+
+(defun no-teste()
+  (cria-no "Tem Asas" '("Voa" "Pardal" "Avestruz") '("Mamifero" "Cão" "Rã"))
+)
+
+(defun novo-sucessor(no)
+  (mapcar #'(lambda(ask)(cria-no (nth 0 ask)(nth 1 ask)(nth 2 ask))) (cdr no)) 
+)
+
+;C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/1º Semestre/Inteligência Artificial (IA)/TP/Exercicios 02-12-2021/animais.dat
+(defun ler-animais(caminho)
+  (with-open-file (file caminho :direction :input) (open-file file))
+)
+
+(defun open-file(file &optional (animais '()))
+  (let* ((animal (read file nil :end))
+         (animais (cons animal animais)))
+    (cond
+     ((eq animal :end)(reverse(cdr animais)))
+     (t (open-file file animais))))
+)
+
+(defun no-pergunta(no)
+   (nth 0 no)
+)
+(defun no-sim(no)
+  (nth 1 no)
+)
+(defun no-nao(no)
+  (nth 2 no)
+)
+
+(defun pergunta(no)
+  (princ "Insira uma pergunta")
+  (let((input(read)))
+    
+    (escreve-pergunta))
+)
+
+(defun resposta(no)
+   (princ (no-pergunta no))
+   (princ " 0 (Sim) ou  1 (Não) : ")
+   (setq input (read))
+       (cond
+         ((equal input 0) (no-sim no))
+         ((equal input 1)(no-nao no))
+         (t (resposta no))
+        )
+)
+
+(defun pergunta(no)
+   (princ (no-pergunta no))
+   ()
+)
+

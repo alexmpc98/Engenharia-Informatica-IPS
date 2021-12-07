@@ -1,0 +1,29 @@
+﻿@model MiniESTS.Models.Loja
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Loja</h1>
+
+<div>
+    <h4> @Html.DisplayFor(modelItem => Model.Localidade)</h4>
+    <hr />
+        <table>
+            <tr> <th>Produtos:</th></tr>
+            @foreach (var item in Model.Stock)
+            {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+        </tr>
+            }
+                </table>
+
+
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.LojaId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
