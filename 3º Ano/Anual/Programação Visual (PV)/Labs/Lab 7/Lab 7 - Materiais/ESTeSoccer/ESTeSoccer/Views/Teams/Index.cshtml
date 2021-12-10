@@ -1,0 +1,70 @@
+﻿@model IEnumerable<ESTeSoccerMVC.Models.Team>
+
+@{
+    ViewData["Title"] = "Equipas";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.League)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Initials)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FoundingDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfTitles)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MainColor)
+            </th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <a asp-controller="Leagues" asp-action="Details" asp-route-id="@item.LeagueId">
+                    @Html.DisplayFor(modelItem => item.League.Name)</a> 
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Initials)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FoundingDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfTitles)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MainColor)
+            </td>
+            <td>
+                <a asp-controller="Players" asp-action="PlayersByTeam" asp-route-teamId="@item.TeamId">Jogadores</a>
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.TeamId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.TeamId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.TeamId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

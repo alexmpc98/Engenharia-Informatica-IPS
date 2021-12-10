@@ -1,0 +1,65 @@
+﻿@model ESTeSoccerMVC.Models.League
+
+@{
+    ViewData["Title"] = @Model.Name + " - " + @Model.Country;
+}
+
+@*<h1>Details</h1>*@
+
+<div>
+    <h4>@ViewData["Title"]</h4>
+    <hr />
+    @if(Model.Teams != null && Model.Teams.Count != 0 )
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Teams[0].Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Teams[0].Initials)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Teams[0].FoundingDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Teams[0].NumberOfTitles)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Teams[0].MainColor)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+        @foreach (var item in Model.Teams) {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Initials)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FoundingDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NumberOfTitles)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MainColor)
+                    </td>
+                </tr>
+        }
+            </tbody>
+        </table>
+
+    } else
+    {
+        <p>Esta liga ainda não tem equipas</p>
+    }
+</div>
+        
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

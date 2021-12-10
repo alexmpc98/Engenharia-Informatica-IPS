@@ -265,20 +265,21 @@ A função verifica que os valores lidos pertencem ao intervale esperado para cada
 ;    (t (ordena-nos(cdr list)))
 ;   )
 ;)
-
 (defun ordenar(list)
-  (cond
-    ((null list) nil)
-    (t (cons (verifywithrest (no-custo(car list)) (cdr list)) (ordenar (cdr list))))
-  )
+   (mapcar #'(lambda(x)(ordenar-teste x (cdr list)))(car list))
 )
 
-(defun verifywithrest(x list)
+
+(defun ordenar-teste(x list)
+   (mapcar #'(lambda(l)(if(< x (car l)) 0 1)) (cdr list))
+)
+
+(defun ordenar-2(x list)
   (cond
-    ((null list))
-    ((< (x (car list))) (verifywithrest (x (cdr list))))
-    
-   ) 
+    ((< x (car list)) 0)
+    ((> x (car list)) 1)
+    (t nil)
+   )
 )
 
 (defun abertos-bfs (abertos sucessores)

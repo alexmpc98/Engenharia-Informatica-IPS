@@ -1,5 +1,5 @@
-;;;; laboratorio6.lisp
-;;;; Ficha de Laboratório nº6 - O Problema das Vasilhas de Água
+;;;; laboratorio8.lisp
+;;;; Ficha de Laboratório nº8 - O Problema das Vasilhas de Água
 ;;;; Autor: 
 
 ;;; Inicialização do programa
@@ -88,15 +88,15 @@ A função verifica que os valores lidos pertencem ao intervale esperado para cada
 ;;; variaveis de teste e operadores
 (defun no-teste ()
 "Define um no teste do problema da vasilhas em que A=2, B=2, profundidade=0 e pai=NIL"
- (list '(2 2) 0 nil))
+ (list '(2 2) 0 1 nil))
 
 (defun operadores ()
  "Cria uma lista com todos os operadores do problema das vasilhas."
  (list 'vazar-a 'vazar-b 'encher-a 'encher-b 'transferir-a-b 'transferir-b-a))
 
 ;;; Construtor
-(defun cria-no (vasilhas &optional (g 0) (pai nil))
-  (list vasilhas g pai)
+(defun cria-no (vasilhas &optional (g 0) h (pai nil))
+  (list vasilhas g h pai)
 )
 
 
@@ -134,7 +134,21 @@ A função verifica que os valores lidos pertencem ao intervale esperado para cada
 ;; teste: (no-pai (no-teste))
 ;; resultado: NIL
 (defun no-pai(no)
-  (car (cdr (cdr no)))
+  (car (cdddr no))
+)
+
+;;no-heuristica
+;;;teste : (no-heuristica (no-teste))
+;;; resultado: 1
+(defun no-heuristica(no)
+  (car (cddr no))
+)
+
+;;; no-custo
+;;;teste: (no-custo (no-teste))
+;;; resultado 1
+(defun no-custo(no)
+  (+ (no-heuristica no) (no-profundidade no))
 )
 
 ;;; Operadores do problema
@@ -155,17 +169,11 @@ A função verifica que os valores lidos pertencem ao intervale esperado para cada
 
 ;; teste: (encher-a (no-estado (no-teste)))
 ;; resultado: (3 2)
-;(defun encher-a(no)
-;  (cond
-;    ((< (car no) 3) (encher-a (list (+ (car no) 1) (car (reverse no)))))
-;    (t no)                    
-;   )
-;)
 (defun encher-a(no)
   (cond
     ((= (car no) 3) nil)
     (t (list 3 (car (reverse no))))
-)
+   )
 )
 
 ;; teste: (encher-b (no-estado (no-teste)))
@@ -220,21 +228,21 @@ A função verifica que os valores lidos pertencem ao intervale esperado para cada
 ;; resultado: ((0 4) 1 ((2 2) 0 NIL))
 ;; teste: (novo-sucessor (cria-no '(3 5)) 'encher-a)
 ;; resultado: NIL
-(defun novo-sucessor(no op)
+(defun novo-sucessor(no op h)
   (cond
     ((equal op 'encher-a) 
       (cond
         ((equal (encher-a (car no)) nil) nil)
-        (t (list (encher-a (car no)) (+ (no-profundidade no) 1)  no))))
+        (t (list (encher-a (car no)) (+ (no-profundidade no) 1) h  no))))
     ((equal op 'encher-b) 
         (cond
          ((equal (encher-b (car no)) nil) nil)
-         (t (list (encher-b (car no)) (+ (no-profundidade no) 1)  no))
+         (t (list (encher-b (car no)) (+ (no-profundidade no) 1) h  no))
          ))
-    ((equal op 'transferir-a-b) (list (transferir-a-b (car no)) (+ (no-profundidade no) 1) no))
-    ((equal op 'transferir-b-a) (list (transferir-b-a (car no)) (+ (no-profundidade no) 1) no))
-    ((equal op 'vazar-a) (list (vazar-a (car no)) (+ (no-profundidade no) 1) no))
-    ((equal op 'vazar-b) (list (vazar-b (car no)) (+ (no-profundidade no) 1) no))
+    ((equal op 'transferir-a-b) (list (transferir-a-b (car no)) (+ (no-profundidade no) 1) h no))
+    ((equal op 'transferir-b-a) (list (transferir-b-a (car no)) (+ (no-profundidade no) 1) h no))
+    ((equal op 'vazar-a) (list (vazar-a (car no)) (+ (no-profundidade no) 1) h no))
+    ((equal op 'vazar-b) (list (vazar-b (car no)) (+ (no-profundidade no) 1) h no))
    ) 
 )
 
@@ -242,12 +250,32 @@ A função verifica que os valores lidos pertencem ao intervale esperado para cada
 ;; resultado: (((0 2) 1 ((2 2) 0 NIL)) ((2 0) 1 ((2 2) 0 NIL)) ((3 2) 1 ((2 2) 0 NIL)) ((2 5) 1 ((2 2) 0 NIL)) ((0 4) 1 ((2 2) 0 NIL)) ((3 1) 1 ((2 2) 0 NIL)))
 ;; teste: (sucessores (no-teste) (operadores) 'dfs 2)
 ;; resultado: (((0 2) 1 ((2 2) 0 NIL)) ((2 0) 1 ((2 2) 0 NIL)) ((3 2) 1 ((2 2) 0 NIL)) ((2 5) 1 ((2 2) 0 NIL)) ((0 4) 1 ((2 2) 0 NIL)) ((3 1) 1 ((2 2) 0 NIL)))
-(defun sucessores(no oplist algoritmo &optional maxprofundidade)
+(defun sucessores(no oplist algoritmo fheuristica &optional maxprofundidade)
   (cond ((and (equal algoritmo 'dfs) (= maxprofundidade (no-profundidade no))) NIL)
-        (T (mapcar #'(lambda(func) (novo-sucessor no func)) oplist))
+        (T (mapcar #'(lambda(func) (novo-sucessor no func (funcall fheuristica no))) oplist))
   )
 )
 
+;; Ordenação dos nós: Definir a função ordenar-nos, que implementa a ordenação crescente de uma
+;; lista de nós, de acordo com o valor do custo de cada nó.
+;(defun ordena-nos(list)
+;  (cond
+;    ((null list) nil)
+;    ((<(no-custo(car list))(no-custo(car(cdr list))))(ordena-nos (cons(cdr list)(car list))))
+;    (t (ordena-nos(cdr list)))
+;   )
+;)
+(defun ordenar(list)
+   (mapcar #'(lambda(x)(ordenar-2 x (cdr list)))(car list))
+)
+
+(defun ordenar-2(x list)
+  (cond
+    ((< x (car list)) 0)
+    ((> x (car list)) 1)
+    (t 0)
+   )
+)
 
 (defun abertos-bfs (abertos sucessores)
   (append abertos sucessores)
