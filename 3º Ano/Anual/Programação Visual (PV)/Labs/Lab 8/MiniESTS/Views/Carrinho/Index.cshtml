@@ -1,0 +1,67 @@
+﻿@model IEnumerable<MiniESTS.Models.Carrinho>
+
+@{
+    ViewData["Title"] = "Carrinho";
+}
+
+<h1>Carrinho</h1>
+
+@if (ViewData["Message"] != "" && ViewData["Message"] != null)
+    {
+        <script type="text/javascript">
+            window.onload = function () {
+                alert("@ViewData["Message"]");
+            };
+        </script>
+    }
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Produto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Preco)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Produto.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Preco)
+            </td>
+            <td>
+                <form asp-action="Delete">
+                    <input type="hidden" name="id" value="@item.ProdutoClienteId" />
+                    <input type="submit" value="Remover" class="btn btn-danger" />
+                </form>
+            </td>
+        </tr>
+}
+    <tr>
+        <td>
+        Total: @Model.Sum(x => x.Preco)
+    </td>
+    </tr>
+    </tbody>
+</table>
+@if(Model.FirstOrDefault() != null)
+{
+    <form asp-action="FinishPurchase">
+        <input type="hidden" name="clientId" value="@(Model.FirstOrDefault().ClienteId)" />
+        <input type="submit" value="Finalizar compra" class="btn btn-success" />
+    </form>  
+}
+

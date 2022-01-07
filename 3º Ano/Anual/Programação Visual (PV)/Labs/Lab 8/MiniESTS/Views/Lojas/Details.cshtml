@@ -1,0 +1,62 @@
+﻿@model MiniESTS.Models.Loja
+
+@{
+    ViewData["Title"] = "Loja";
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<div>
+    <h4>Loja</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Localidade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Localidade)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Stock)
+        </dt>
+        <dd class = "col-sm-10">
+            <ul>
+                @if(Model != null)
+                {
+                    foreach(var item in Model.Stock)
+                    {
+                        var stockItem = item.Nome + " - " + item.Tipo + " - " + item.Unidades + " - Desconto? " + item.ComDesconto;
+                        <li>
+                            <form method="post" action="@Url.Action("AddToCart", "Carrinho")">
+                                @stockItem <input hidden name="id" value="@item.ProdutoId"><input name="quantity" type="number" class="form-control" min="0" max="@item.Unidades" style="width:10%;display:inline;">  <input type="submit" value="Adicionar"/>
+                            </form>
+                        </li>
+                    }
+                }
+            </ul>
+        </dd>
+    </dl>
+</div>
+<div>
+    
+    @if (User.IsInRole("admins"))
+    {
+        <a asp-action="Edit" asp-route-id="Model.LojaId">Edit</a> <a> |</a>
+    }
+    <a asp-action="Index">Voltar para lista de Lojas</a>
+</div>
+
+<script>
+    $(document).ready(function(){
+    $('input[type="number"]').on('keyup',function(){
+        v = parseInt($(this).val());
+        min = parseInt($(this).attr('min'));
+        max = parseInt($(this).attr('max'));
+
+        if (v < min){
+            $(this).val(min);
+        } else if (v > max){
+            $(this).val(max);
+        }
+    })
+})
+</script>

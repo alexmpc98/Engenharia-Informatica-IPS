@@ -1,0 +1,136 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MiniESTS
+build_property.RootNamespace = MiniESTS
+build_property.ProjectDir = C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 8\MiniESTS\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\alexa\Desktop\Engenharia-Informatica-IPS\3º Ano\Anual\Programação Visual (PV)\Labs\Lab 8\MiniESTS
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfU3RhdHVzTWVzc2FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/Carrinho/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FycmluaG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/Lojas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9qYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/Lojas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9qYXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/Lojas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9qYXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/Lojas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9qYXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/Lojas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9qYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/Produtos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/Produtos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/Produtos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/Produtos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/Produtos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/Desktop/Engenharia-Informatica-IPS/3º Ano/Anual/Programação Visual (PV)/Labs/Lab 8/MiniESTS/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-w29jxfag7l

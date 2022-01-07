@@ -1,0 +1,8 @@
+
+"EmailSender": {
+    "Host": "smtp.live.com",
+    "Port": 587,
+    "EnableSSL": false,
+    "UserName": "pv-2122@outlook.com",
+    "Password": "prog-vis"
+  },

@@ -1,0 +1,56 @@
+﻿@model IEnumerable<MiniESTS.Models.Loja>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@if(User.IsInRole("administrador")){
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Localidade)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--Estava a gerar um erro se coloca-se o foreach antes do if-->
+        @if (User.IsInRole("administrador"))
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                    @Html.DisplayFor(modelItem => item.Localidade)
+                </td>
+                <td>
+                        <a asp-action="Edit" asp-route-id="@item.LojaId">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.LojaId">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.LojaId">Delete</a>
+                </td>
+            </tr>
+            }
+        }
+        else
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                    @Html.DisplayFor(modelItem => item.Localidade)
+                </td>
+                <td>
+                        <a asp-action="Details" asp-route-id="@item.LojaId">Details</a>
+                </td>
+            </tr>
+            }
+        }
+    </tbody>
+</table>
