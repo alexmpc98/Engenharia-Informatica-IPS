@@ -1,0 +1,29 @@
+<div class="container">
+  <br />
+  <div class="row">
+    <div class="col">
+      <h3>Criar Liga</h3>
+    </div>
+    <div class="col text-right">
+      <a href="#" routerLink="/ligas" class="btn btn-secondary btn-sm">Voltar à lista de ligas</a>
+    </div>
+  </div>
+  <br />
+  <form [formGroup]="createForm" (ngSubmit)="onSubmit(createForm)">
+    <div class="form-group">
+      <label for="name">Nome da Liga:</label>
+      <input formControlName="name"
+             id="name"
+             type="text"
+             class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="country">Pais da Liga:</label>
+      <input formControlName="country"
+             id="country"
+             type="text"
+             class="form-control" />
+    </div>
+    <button class="btn btn-primary" type="submit" [disabled]="!createForm.valid">Criar Liga</button>
+  </form>
+</div>

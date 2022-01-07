@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "d260698b-6b5f-4cd7-b475-52b459d82419": {
+      "ProjectGuid": "d260698b-6b5f-4cd7-b475-52b459d82419",
+      "DisplayName": "ESTeSoccerClient",
+      "ColorIndex": 0
+    },
+    "d9bc73ea-6099-46cc-a257-42bbee783410": {
+      "ProjectGuid": "d9bc73ea-6099-46cc-a257-42bbee783410",
+      "DisplayName": "ESTeSoccerAngularClient",
+      "ColorIndex": 1
+    },
+    "20e3bc03-62c4-4f49-be9b-eaa2ad80236c": {
+      "ProjectGuid": "20e3bc03-62c4-4f49-be9b-eaa2ad80236c",
+      "DisplayName": "ESTeSoccer",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

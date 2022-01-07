@@ -1,0 +1,38 @@
+<h1 id="tableLabel">ESTeSoccer - Leagues</h1>
+
+<p *ngIf="!leagues"><em>Loading...</em></p>
+
+<div class="container">
+  <br />
+  <div class="row">
+    <div class="col">
+      <h3>Ligas</h3>
+    </div>
+    <div class="col text-right">
+      <a href="#" routerLink="/ligas/create/" class="btn btn-success btn-sm">Criar nova liga</a>
+    </div>
+  </div>
+  <br />
+  <table class='table table-bordered table-sm' aria-labelledby="tableLabel" *ngIf="leagues">
+    <thead>
+      <tr>
+        <th>LeagueID</th>
+        <th>Name</th>
+        <th>Country</th>
+        <th width="300px"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let league of leagues">
+        <td>{{ league.leagueId }}</td>
+        <td>{{ league.name }}</td>
+        <td>{{ league.country }}</td>
+        <td class="text-right">
+          <a href="#" [routerLink]="['/ligas/', league.leagueId, 'details']" class="btn btn-info btn-sm">Ver a liga</a>
+          <a href="#" [routerLink]="['/ligas/', league.leagueId, 'edit']" class="btn btn-primary btn-sm">Editar a liga</a>
+          <button type="button" (click)="deleteLeague(league.leagueId)" class="btn btn-danger btn-sm">Apagar a liga</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
